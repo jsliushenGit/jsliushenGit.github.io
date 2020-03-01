@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/52.f7798353.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link router-link-active">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link router-link-active">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/readBook/JavaScript设计模式与开发实践/this&amp;call&amp;apply.html" class="sidebar-link">this、call和apply</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/闭包和高阶函数.html" class="sidebar-link">闭包和高阶函数</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/单例模式.html" class="sidebar-link">单例模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/策略模式.html" class="sidebar-link">策略模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/代理模式.html" class="sidebar-link">代理模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/迭代器模式.html" class="sidebar-link">迭代器模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html" class="active sidebar-link">发布-订阅模式</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#发布-订阅模式的作用" class="sidebar-link">发布-订阅模式的作用</a></li><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#dom事件" class="sidebar-link">DOM事件</a></li><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#自定义事件" class="sidebar-link">自定义事件</a></li><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#发布-订阅模式的通用实现" class="sidebar-link">发布-订阅模式的通用实现</a></li><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#全局的发布-订阅对象" class="sidebar-link">全局的发布-订阅对象</a></li><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#小结" class="sidebar-link">小结</a></li><li class="sidebar-sub-header"><a href="/readBook/JavaScript设计模式与开发实践/发布-订阅模式.html#心得体会" class="sidebar-link">心得体会</a></li></ul></li><li><a href="/readBook/JavaScript设计模式与开发实践/命令模式.html" class="sidebar-link">命令模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/组合模式.html" class="sidebar-link">组合模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/模板方法模式.html" class="sidebar-link">模板方法模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/享元模式.html" class="sidebar-link">享元模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/职责链模式.html" class="sidebar-link">职责链模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/中介者模式.html" class="sidebar-link">中介者模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/装饰者模式.html" class="sidebar-link">装饰者模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/状态模式.html" class="sidebar-link">状态模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/适配器模式.html" class="sidebar-link">适配器模式</a></li><li><a href="/readBook/JavaScript设计模式与开发实践/设计原则.html" class="sidebar-link">设计原则</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>发布—订阅模式定义对象间的一种一对多的依赖关系，当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知。在 <code>JavaScript</code> 开发中，我们一般用事件模型来替代传统的发布—订阅模式。</p></div> <h2 id="发布-订阅模式的作用"><a href="#发布-订阅模式的作用" class="header-anchor">#</a> 发布-订阅模式的作用</h2> <ol><li>发布-订阅模式可以广泛应用于一步编程中，这是一种替代传递回调函数的方案。在异步编程中使用发布-订阅模式，我们就无需过多关注对象在异步运行期间的内部状态，而只需要订阅感兴趣的事件发生点。</li> <li>发布-订阅模式可以取代对象之间硬编码的通知机制，一个对象不用再显试地调用另外一个对象的某个接口。发布-订阅可以让两个对象松耦合地联系在一起，虽然不太清楚彼此的细节，但这不影响它们之间相互通信。</li></ol> <h2 id="dom事件"><a href="#dom事件" class="header-anchor">#</a> DOM事件</h2> <p>我们使用的DOM事件其实就是JavaScript中一个很典型的发布-订阅模式</p> <div class="language-JavaScript extra-class"><pre><code class="language-JavaScript"><span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+	alert(<span class="hljs-number">1</span>)
+}, <span class="hljs-literal">false</span>)
+
+<span class="hljs-built_in">document</span>.body.click()
+</code></pre></div><p>订阅document.body上的click事件，当body被点击时，body节点便会向订阅者发布这个消息。</p> <h2 id="自定义事件"><a href="#自定义事件" class="header-anchor">#</a> 自定义事件</h2> <p>实现发布-订阅模式的步骤</p> <ol><li>首先要指定好谁充当发布者</li> <li>给发布者添加一个缓存列表，用于存放回调函数以便通知订阅者</li> <li>发布消息的时候，发布者会遍历这个缓存列表，依次触发里面存放的订阅者回调函数</li></ol> <p>案例：买房者们向售楼部订阅楼盘信息，把电话号码留在售楼处。新楼盘推出时，售楼MM翻开花名册，依次发短信通知买房者们</p> <div class="language-JavaScript extra-class"><pre><code class="language-JavaScript"><span class="hljs-keyword">var</span> salesOffices = {} <span class="hljs-comment">// 定义售楼处</span>
+
+salesOffices.clientList = {} <span class="hljs-comment">// 缓存列表，存放订阅者的回调函数</span>
+
+salesOffices.listen = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key,fn</span>) </span>{
+  <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.clientList[key]) {
+    <span class="hljs-keyword">this</span>.clientList[key] = []
+  }
+  <span class="hljs-keyword">this</span>.clientList[key].push(fn);
+}
+
+salesOffices.triggle = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> key = <span class="hljs-built_in">Array</span>.prototype.shift.call(<span class="hljs-built_in">arguments</span>);
+  <span class="hljs-keyword">var</span> fns = <span class="hljs-keyword">this</span>.clientList[key];
+  <span class="hljs-keyword">if</span> (!fns||fns.length === <span class="hljs-number">0</span>) {
+    <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+  }
+  <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i=<span class="hljs-number">0</span>, fn; fn = fns[i++];){
+    fn.apply(<span class="hljs-keyword">this</span>,<span class="hljs-built_in">arguments</span>);
+  }
+}
+
+salesOffices.listen(<span class="hljs-string">&quot;88squareMeter&quot;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">price</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;小明，有一个88平的房子，价格:&quot;</span> + price);
+})
+
+salesOffices.listen(<span class="hljs-string">&quot;100squareMeter&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">price</span>) </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;小华，有一个100平的房子，价格&quot;</span> + price);
+})
+
+salesOffices.listen(<span class="hljs-string">&quot;100squareMeter&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">price</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;小明，有个100平的房子，价格:&quot;</span> + price);
+})
+
+salesOffices.triggle(<span class="hljs-string">&quot;88squareMeter&quot;</span>, <span class="hljs-number">2000000</span>);
+salesOffices.triggle(<span class="hljs-string">&quot;100squareMeter&quot;</span>, <span class="hljs-number">3000000</span>);
+salesOffices.triggle(<span class="hljs-string">&quot;200squareMeter&quot;</span>, <span class="hljs-number">7000000</span>);
+</code></pre></div><p>上面的代码实现了基本的发布-订阅功能，但是使用了全局变量，代码的复用性也比较差</p> <h2 id="发布-订阅模式的通用实现"><a href="#发布-订阅模式的通用实现" class="header-anchor">#</a> 发布-订阅模式的通用实现</h2> <div class="language-JavaScript extra-class"><pre><code class="language-JavaScript"><span class="hljs-keyword">var</span> event = {
+  <span class="hljs-attr">init</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.clientlist = {};
+	},
+	
+  <span class="hljs-attr">listen</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key, fn</span>) </span>{
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.clientlist) {
+      <span class="hljs-keyword">this</span>.clientlist = {};
+    }
+    <span class="hljs-keyword">if</span> (!<span class="hljs-keyword">this</span>.clientlist[key]) {
+      <span class="hljs-keyword">this</span>.clientlist[key] = [];
+    }
+    <span class="hljs-keyword">this</span>.clientlist[key].push(fn);
+	},
+	
+  <span class="hljs-attr">trigger</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> key = <span class="hljs-built_in">Array</span>.prototype.shift.call(<span class="hljs-built_in">arguments</span>);
+    <span class="hljs-keyword">var</span> fns = <span class="hljs-keyword">this</span>.clientlist[key];
+    <span class="hljs-keyword">if</span> (!fns || fns.length === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, fn; fn = fns[i++];) {
+      fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+    }
+	},
+	
+  <span class="hljs-attr">remove</span>: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key, fn</span>) </span>{
+    <span class="hljs-keyword">var</span> fns = <span class="hljs-keyword">this</span>.clientlist[key];
+    <span class="hljs-keyword">if</span> (!fns) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+    <span class="hljs-keyword">if</span> (!fn) {
+      fns.length = <span class="hljs-number">0</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; fns.length; i++) {
+        <span class="hljs-keyword">if</span> (fn === fns[i]) {
+          fns.splice(i, <span class="hljs-number">1</span>);
+        }
+      }
+    }
+  }
+}
+
+<span class="hljs-keyword">var</span> salesOffice = {};
+event.init.call(salesOffice);
+
+<span class="hljs-comment">//小明订阅88平米</span>
+<span class="hljs-keyword">var</span> fn1 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">price</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;你好小明，你订阅的88平米房子，价格:&quot;</span> + price);
+}
+
+<span class="hljs-comment">//小红订阅88平米</span>
+<span class="hljs-keyword">var</span> fn2 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">price</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;你好小红，你订阅的88平米房子，价格:&quot;</span> + price);
+}
+
+<span class="hljs-comment">//小红订阅100平米</span>
+<span class="hljs-keyword">var</span> fn3 = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">price</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;你好小红，你订阅的100平米房子，价格:&quot;</span> + price);
+}
+
+event.listen.call(salesOffice, <span class="hljs-string">&quot;m88&quot;</span>, fn1);
+event.listen.call(salesOffice, <span class="hljs-string">&quot;m88&quot;</span>, fn2);
+event.listen.call(salesOffice, <span class="hljs-string">&quot;m100&quot;</span>, fn3);
+event.remove.call(salesOffice, <span class="hljs-string">&quot;m88&quot;</span>, fn2);
+event.trigger.call(salesOffice, <span class="hljs-string">&quot;m88&quot;</span>, <span class="hljs-number">1000000</span>);
+</code></pre></div><p>上面的代码还存在两个问题</p> <ul><li>我们给每个发布者对象都添加了listen和trigger方法，以及一个缓存列表clientList，这其实是一种资源浪费</li> <li>买房者跟售楼处对象还存在着一定的耦合性，买房者至少要知道售楼处对象的名字是salesOffice，才能顺利的订阅到事件。</li></ul> <h2 id="全局的发布-订阅对象"><a href="#全局的发布-订阅对象" class="header-anchor">#</a> 全局的发布-订阅对象</h2> <div class="language-JavaScript extra-class"><pre><code class="language-JavaScript"><span class="hljs-keyword">var</span> Event = (<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+	<span class="hljs-keyword">var</span> clientList = {}, listen, trigger, remove;
+	
+  listen = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key, fn</span>) </span>{
+    <span class="hljs-keyword">if</span> (!clientList[key]) {
+      clientList[key]=[];
+    }
+  	clientList[key].push(fn);
+	}
+	
+  trigger = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> key = <span class="hljs-built_in">Array</span>.prototype.shift.call(<span class="hljs-built_in">arguments</span>),
+				fns = clientList[key];
+				
+    <span class="hljs-keyword">if</span> (!fns || fns.length === <span class="hljs-number">0</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+		
+		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, fn; fn = fns[i++];) {
+      fn.apply(<span class="hljs-keyword">this</span>, <span class="hljs-built_in">arguments</span>);
+    }
+	}
+	
+  remove = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">key, fn</span>) </span>{
+    <span class="hljs-keyword">var</span> fns = clientList[key];
+    <span class="hljs-comment">//如果不存在此订阅，直接返回</span>
+    <span class="hljs-keyword">if</span> (!fns) {
+      <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>;
+    }
+    <span class="hljs-comment">//如果没有传入第二个参数，则默认取消所有订阅</span>
+    <span class="hljs-keyword">if</span> (!fn) {
+      fns.length = <span class="hljs-number">0</span>;
+    } <span class="hljs-keyword">else</span> {
+      <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; fns.length; i++) {
+        <span class="hljs-keyword">if</span> (fn === fns[i]) {
+          fns.splice(i, <span class="hljs-number">1</span>);
+        }
+      }
+    }
+	}
+	
+  <span class="hljs-keyword">return</span> {
+    <span class="hljs-attr">listen</span>: listen,
+    <span class="hljs-attr">trigger</span>: trigger,
+    <span class="hljs-attr">remove</span>: remove
+  }
+})()
+</code></pre></div><h2 id="小结"><a href="#小结" class="header-anchor">#</a> 小结</h2> <p>发布-订阅模式在实际开发中非常有用，它可以实现时间上的解耦和对象上的解耦。现代的MVC和MVVM架构都少不了发布-订阅模式的参与。</p> <h2 id="心得体会"><a href="#心得体会" class="header-anchor">#</a> 心得体会</h2> <p>发布-订阅模式真的非常强大，在开发中帮助我解决了很多问题。现代很多库和框架的设计思想上都可以看到发布-订阅模式的身影。</p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>发布-订阅模式和观察者模式不是同一个东西</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/readBook/JavaScript设计模式与开发实践/迭代器模式.html" class="prev">
+        迭代器模式
+      </a></span> <span class="next"><a href="/readBook/JavaScript设计模式与开发实践/命令模式.html">
+        命令模式
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/52.f7798353.js" defer></script>
+  </body>
+</html>

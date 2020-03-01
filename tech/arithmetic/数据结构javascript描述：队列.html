@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/120.71898050.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p>title: 数据结构javascript描述：队列
+author: jsliushen
+tags:</p> <ul><li>数据结构
+categories:</li> <li>technology
+date: 2017-11-25 22:46:00</li></ul> <hr> <h2 id="队列是一种遵循-先进先出-原则的有序集合。比如我们平时生活中排队买票，队头的人是第一个进入队伍的人，同时也是第一个买到票的人。javascript实现"><a href="#队列是一种遵循-先进先出-原则的有序集合。比如我们平时生活中排队买票，队头的人是第一个进入队伍的人，同时也是第一个买到票的人。javascript实现" class="header-anchor">#</a> 队列是一种遵循“先进先出”原则的有序集合。比如我们平时生活中排队买票，队头的人是第一个进入队伍的人，同时也是第一个买到票的人。
+javascript实现</h2> <p>我们使用数组来模拟队列</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> queue = [];
+}
+</code></pre></div><p>通常一个队列需要有以下方法：</p> <ul><li>enqueue() 向队尾添加一个元素</li> <li>dequeue() 删除并返回队首元素</li> <li>front() 读取队首元素</li> <li>back() 读取队尾元素</li> <li>queueToString() 显示队列内的所有元素</li> <li>empty() 判断队列是否为空</li> <li>size()  获取队列的长度</li></ul> <p>一个一个实现</p> <h4 id="enqueue"><a href="#enqueue" class="header-anchor">#</a> enqueue</h4> <p>向队尾添加元素，可以直接使用数组的push方法，每次添加的元素都在队尾，也就是数组的最后一位。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.enqueue=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value</span>)</span>{
+    	queue.push(value);
+    }
+}
+</code></pre></div><h4 id="dequeue"><a href="#dequeue" class="header-anchor">#</a> dequeue</h4> <p>删除并返回队首的元素，也就是数组的第一个元素，可以直接使用数组中的shift方法来模拟实现。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.dequeue=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    	<span class="hljs-keyword">return</span> queue.shift();
+    }
+}
+</code></pre></div><h4 id="front"><a href="#front" class="header-anchor">#</a> front</h4> <p>获取队首的元素，也就是数组的第一个元素，可以使用数组下标直接获取，第一个元素的下标是0.</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.front=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    	<span class="hljs-keyword">return</span> queue[<span class="hljs-number">0</span>];
+    }
+}
+</code></pre></div><h4 id="back"><a href="#back" class="header-anchor">#</a> back</h4> <p>获取队尾的元素，也就是数组的最后一个元素，可以使用数组下标直接获取，最后一个元素的下标是数组长度减1.</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.back=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    	<span class="hljs-keyword">return</span> queue[queue.length<span class="hljs-number">-1</span>];
+    }
+}
+</code></pre></div><h4 id="queuetostring"><a href="#queuetostring" class="header-anchor">#</a> queueToString</h4> <p>以字符串显示队列中所有内容,这个可以直接打印数组，字符串形式可以使用toString()方法来转化</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.queueToString=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    	<span class="hljs-built_in">console</span>.log(queue.toString())
+    }
+}
+</code></pre></div><h4 id="empty"><a href="#empty" class="header-anchor">#</a> empty</h4> <p>检查队列是否为空，可以用判断数组的长度是否为0来模拟</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.empty=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    	<span class="hljs-keyword">return</span> queue.length===<span class="hljs-number">0</span>
+    }
+}
+</code></pre></div><h4 id="empty-2"><a href="#empty-2" class="header-anchor">#</a> empty</h4> <p>获取队列的长度，可以使用数组的length属性</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Queue</span>(<span class="hljs-params"></span>)</span>{
+	<span class="hljs-keyword">var</span> queue=[];
+    <span class="hljs-keyword">this</span>.size=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    	<span class="hljs-keyword">return</span> queue.length
+    }
+}
+</code></pre></div><h2 id="测试一下"><a href="#测试一下" class="header-anchor">#</a> 测试一下</h2> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-keyword">var</span> myqueue = <span class="hljs-keyword">new</span> Queue();
+    <span class="hljs-built_in">console</span>.log(myqueue.empty());  <span class="hljs-comment">//true</span>
+    myqueue.enqueue(<span class="hljs-number">1</span>);  <span class="hljs-comment">//队尾添加一个元素</span>
+    myqueue.enqueue(<span class="hljs-number">2</span>);
+    <span class="hljs-built_in">console</span>.log(myqueue.dequeue());   <span class="hljs-comment">//1,删除并返回队首的元素</span>
+    myqueue.queueToString();  <span class="hljs-comment">//2， 以字符串的形式打印队列</span>
+</code></pre></div><h2 id="实际应用"><a href="#实际应用" class="header-anchor">#</a> 实际应用</h2> <p>约瑟夫环问题：n个人围城一桌（首位相连），约定从1报数，报到数为k的人出局，然后下一位又从1开始报，以此类推。最后留下的人获胜。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">Joseph</span>(<span class="hljs-params">nameList, num</span>) </span>{
+  		<span class="hljs-keyword">var</span> queue = <span class="hljs-keyword">new</span> Queue();
+  		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; nameList.length; i++) {
+    		queue.enqueue(nameList[i]);
+  		}
+
+  		<span class="hljs-keyword">var</span> eliminated = <span class="hljs-string">''</span>;
+
+  		<span class="hljs-keyword">while</span> (queue.size() &gt; <span class="hljs-number">1</span>) {
+    		<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; num; i++) {
+      			queue.enqueue(queue.dequeue());
+    		}
+
+    		eliminated = queue.dequeue();
+    		<span class="hljs-built_in">console</span>.log(eliminated + <span class="hljs-string">&quot; Get out!&quot;</span>)
+  		}
+
+  		<span class="hljs-keyword">return</span> queue.dequeue()
+	}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/120.71898050.js" defer></script>
+  </body>
+</html>

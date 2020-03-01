@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>diff | 静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/110.7b785169.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link router-link-active">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link router-link-active">
+  知识库
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/repository/html/" class="sidebar-link">HTML</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/repository/vue/" class="sidebar-link">vue</a></li><li><a href="/repository/react/" class="sidebar-link">react</a></li><li><a href="/repository/standard/" class="sidebar-link">持续集成</a></li><li><a href="/repository/performance/" class="sidebar-link">性能优化</a></li><li><a href="/repository/monitoring/" class="sidebar-link">用户监控</a></li><li><a href="/repository/protocol/" class="sidebar-link">网络</a></li><li><a href="/repository/security/" class="sidebar-link">web安全</a></li><li><a href="/repository/browser/" class="sidebar-link">浏览器</a></li><li><a href="/repository/mobile/" class="sidebar-link">移动端</a></li><li><a href="/repository/desktop/" class="sidebar-link">桌面程序</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/repository/mongodb/" class="sidebar-link">mongodb</a></li><li><a href="/repository/nginx/" class="sidebar-link">nginx</a></li><li><a href="/repository/algorithm/" class="sidebar-link">算法</a></li><li><a href="/repository/dataStructure/" class="sidebar-link">数据结构</a></li><li><a href="/readBook/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" class="sidebar-link">设计模式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="diff"><a href="#diff" class="header-anchor">#</a> diff</h1> <h2 id="react16之前"><a href="#react16之前" class="header-anchor">#</a> react16之前</h2> <p>Virtual DOM Tree 。 树状结构，深度优先遍历，递归  <a href="https://react.docschina.org/docs/reconciliation.html#the-diffing-algorithm" target="_blank" rel="noopener noreferrer">diff<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>##react16之后</p> <p>Fiber架构，链表结构，增量更新。</p> <p>###TextNode</p> <div class="language-react extra-class"><pre><code class="language-react">// demo1：当前 ui 对应的节点的 jsx
+return (
+  &lt;div&gt;
+    &lt;xxx&gt;&lt;/xxx&gt;
+    &lt;aaa&gt;&lt;/aaa&gt;
+  &lt;/div&gt;
+)
+
+// demo2：更新成功后的节点对应的 jsx
+return (
+  &lt;div&gt;
+    新的文本
+  &lt;/div&gt;
+)
+</code></pre></div><p>对应的单链表结构</p> <p>![image-20191231025001782](/Users/liushen/Library/Application Support/typora-user-images/image-20191231025001782.png)</p> <p>新的Fiber Node为textNode情况下，调用reconcileSingleTextNode方法对比。</p> <p>原对应节点xxx有两种情况</p> <ol><li>xxx是textNode</li> <li>xxx不是textNode</li></ol> <h4 id="xxx是textnode"><a href="#xxx是textnode" class="header-anchor">#</a> xxx是textNode</h4> <p>原节点也是textNode，复用原节点(xxx)，删除剩余节点(aaa)</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">if</span> (currentFirstChild !== <span class="hljs-literal">null</span> &amp;&amp; currentFirstChild.tag === HostText) {
+  <span class="hljs-comment">// We already have an existing node so let's just update it and delete</span>
+  <span class="hljs-comment">// the rest.</span>
+  <span class="hljs-comment">// 删除剩余节点，从当前层的第一个元素右边的元素开始</span>
+  deleteRemainingChildren(returnFiber, currentFirstChild.sibling);
+  <span class="hljs-comment">// 复用当前节点</span>
+  <span class="hljs-keyword">const</span> existing = useFiber(currentFirstChild, textContent, expirationTime);
+  existing.return = returnFiber;
+  <span class="hljs-keyword">return</span> existing;
+}
+</code></pre></div><h4 id="xxx不是textnode"><a href="#xxx不是textnode" class="header-anchor">#</a> xxx不是textNode</h4> <p>原节点不是textNode，无法复用，删除原节点(xxx和aaa)</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-comment">// 删除原节点,从当前层的第一个节点开始</span>
+deleteRemainingChildren(returnFiber, currentFirstChild);
+<span class="hljs-comment">// 新的节点是文本节点，需要创建一个</span>
+<span class="hljs-keyword">const</span> created = createFiberFromText(
+  textContent,
+  returnFiber.mode,
+  expirationTime,
+);
+created.return = returnFiber;
+</code></pre></div><blockquote><p>注意：删除节点不会真的从链表里面把节点删除，只是打一个 delete 的 tag，当 commit 的时候才会真正的去删除。</p></blockquote> <h3 id="react-element"><a href="#react-element" class="header-anchor">#</a> React Element</h3> <div class="language-react extra-class"><pre><code class="language-react">// demo1：当前 ui 对应的节点的 jsx
+return (
+  &lt;div&gt;
+    &lt;xxx&gt;&lt;/xxx&gt;
+    &lt;AAA&gt;&lt;/AAA&gt;
+  &lt;/div&gt;
+)
+
+// demo2：更新成功后的节点对应的 jsx
+return (
+  &lt;div&gt;
+    &lt;AAA&gt;&lt;/AAA&gt;
+  &lt;/div&gt;
+)
+</code></pre></div><p>对应的单链表结构</p> <p>![image-20191231110701415](/Users/liushen/Library/Application Support/typora-user-images/image-20191231110701415.png)</p> <p>新节点为一个Element节点，diff时先判断有没有节点可以复用(reconcileSingleElement方法)</p> <ol><li>key相同</li> <li>节点类型相同</li></ol> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">if</span> (child.key === key) {
+  <span class="hljs-keyword">if</span> (
+    child.tag === Fragment
+    ? element.type === REACT_FRAGMENT_TYPE
+    : child.elementType === element.type
+  ) {
+    <span class="hljs-comment">// 新的节点只有一个，删除原节点的兄弟节点</span>
+    deleteRemainingChildren(returnFiber, child.sibling);
+    <span class="hljs-comment">// 复用当前节点</span>
+    <span class="hljs-keyword">const</span> existing = useFiber(
+      child,
+      element.type === REACT_FRAGMENT_TYPE
+      ? element.props.children
+      : element.props,
+      expirationTime,
+    );
+    existing.ref = coerceRef(returnFiber, child, element);
+    existing.return = returnFiber;
+    <span class="hljs-keyword">return</span> existing;
+}
+</code></pre></div><p>从当前层的第一个节点开始对比，如果第一个节点不能复用，删除它，继续找它的sibling兄弟节点。如果没有一个匹配的，当前层所有的节点都会被删除。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-comment">// 找到 key 相同的节点，就会复用当前节点</span>
+<span class="hljs-keyword">while</span> (child !== <span class="hljs-literal">null</span>) {
+  <span class="hljs-keyword">if</span> (child.key === key) {
+    <span class="hljs-keyword">if</span> (
+      child.tag === Fragment
+      ? element.type === REACT_FRAGMENT_TYPE
+      : child.elementType === element.type
+    ) {
+      <span class="hljs-comment">// 复用节点逻辑相关代码</span>
+      <span class="hljs-comment">// code ...</span>
+      <span class="hljs-keyword">return</span> existing;
+    } <span class="hljs-keyword">else</span> {
+      deleteRemainingChildren(returnFiber, child);
+      <span class="hljs-keyword">break</span>;
+    }
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// 如果没有可以复用的节点，就把这个节点删除</span>
+    deleteChild(returnFiber, child);
+  }
+  child = child.sibling;
+}
+
+</code></pre></div><div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-comment">// 如果没有可以复用的节点，就创建新节点</span>
+<span class="hljs-keyword">if</span> (element.type === REACT_FRAGMENT_TYPE) {
+  <span class="hljs-keyword">const</span> created = createFiberFromFragment(
+    element.props.children,
+    returnFiber.mode,
+    expirationTime,
+    element.key,
+  );
+  created.return = returnFiber;
+  <span class="hljs-keyword">return</span> created;
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-keyword">const</span> created = createFiberFromElement(
+    element,
+    returnFiber.mode,
+    expirationTime,
+  );
+  created.ref = coerceRef(returnFiber, currentFirstChild, element);
+  created.return = returnFiber;
+  <span class="hljs-keyword">return</span> created;
+}
+</code></pre></div><h3 id="array"><a href="#array" class="header-anchor">#</a> Array</h3> <div class="language-react extra-class"><pre><code class="language-react">// demo1：当前 ui 对应的节点的 jsx
+return (
+  &lt;div&gt;
+    &lt;xxx&gt;&lt;/xxx&gt;
+    &lt;AAA&gt;&lt;/AAA&gt;
+    &lt;BBB&gt;&lt;/BBB&gt;
+  &lt;/div&gt;
+)
+
+// demo2：更新成功后的节点对应的 jsx
+return (
+  &lt;div&gt;
+    &lt;xxx&gt;&lt;/xxx&gt;
+    &lt;AAA&gt;&lt;/AAA&gt;
+    &lt;CCC&gt;&lt;/CCC&gt;
+    &lt;DDD&gt;&lt;/DDD&gt;
+  &lt;/div&gt;
+)
+</code></pre></div><p>新旧节点有多个，循环对比diff。</p> <h4 id="第一步"><a href="#第一步" class="header-anchor">#</a> 第一步</h4> <p>从头部遍历。第一次遍历新数组，新老index都++，比较新老数组哪些元素是一样的，（通过updateSlot，比较key），如果是同样的就update。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">let</span> oldFiber = currentFirstChild;
+<span class="hljs-keyword">let</span> lastPlacedIndex = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">let</span> newIdx = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">let</span> nextOldFiber = <span class="hljs-literal">null</span>;
+<span class="hljs-keyword">for</span> (; oldFiber !== <span class="hljs-literal">null</span> &amp;&amp; newIdx &lt; newChildren.length; newIdx++) {
+  <span class="hljs-keyword">if</span> (oldFiber.index &gt; newIdx) {
+    nextOldFiber = oldFiber;
+    oldFiber = <span class="hljs-literal">null</span>;
+  } <span class="hljs-keyword">else</span> {
+    nextOldFiber = oldFiber.sibling;
+  }
+  <span class="hljs-keyword">const</span> newFiber = updateSlot(
+    returnFiber,
+    oldFiber,
+    newChildren[newIdx],
+    expirationTime,
+  );
+  <span class="hljs-keyword">if</span> (newFiber === <span class="hljs-literal">null</span>) {
+  <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> This breaks on empty slots like null children. That's</span>
+  <span class="hljs-comment">// unfortunate because it triggers the slow path all the time. We need</span>
+  <span class="hljs-comment">// a better way to communicate whether this was a miss or null,</span>
+  <span class="hljs-comment">// boolean, undefined, etc.</span>
+    <span class="hljs-keyword">if</span> (oldFiber === <span class="hljs-literal">null</span>) {
+      oldFiber = nextOldFiber;
+    }
+    <span class="hljs-keyword">break</span>;
+  }
+  <span class="hljs-keyword">if</span> (shouldTrackSideEffects) {
+    <span class="hljs-keyword">if</span> (oldFiber &amp;&amp; newFiber.alternate === <span class="hljs-literal">null</span>) {
+      <span class="hljs-comment">// We matched the slot, but we didn't reuse the existing fiber, so we</span>
+      <span class="hljs-comment">// need to delete the existing child.</span>
+    	deleteChild(returnFiber, oldFiber);
+    }
+  }
+  lastPlacedIndex = placeChild(newFiber, lastPlacedIndex, newIdx);
+  <span class="hljs-keyword">if</span> (previousNewFiber === <span class="hljs-literal">null</span>) {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Move out of the loop. This only happens for the first run.</span>
+    resultingFirstChild = newFiber;
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Defer siblings if we're not at the right index for this slot.</span>
+    <span class="hljs-comment">// I.e. if we had null values before, then we want to defer this</span>
+    <span class="hljs-comment">// for each null value. However, we also don't want to call updateSlot</span>
+    <span class="hljs-comment">// with the previous one.</span>
+    previousNewFiber.sibling = newFiber;
+  }
+  previousNewFiber = newFiber;
+  oldFiber = nextOldFiber;
+}
+</code></pre></div><h4 id="第二步"><a href="#第二步" class="header-anchor">#</a> 第二步</h4> <ul><li><p>新节点遍历完毕</p> <p>新节点遍历完毕，一般是原数组删除了元素。遍历完成后把原链表当前层剩下的元素都删除</p></li> <li><p>旧节点遍历完毕</p> <p>旧节点遍历完毕，一般是原数组新增了元素。遍历完成后在新链表当前层新建Fiber节点</p></li></ul> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">if</span> (newIdx === newChildren.length) {
+      <span class="hljs-comment">// We've reached the end of the new children. We can delete the rest.</span>
+      deleteRemainingChildren(returnFiber, oldFiber);
+      <span class="hljs-keyword">return</span> resultingFirstChild;
+    }
+
+    <span class="hljs-keyword">if</span> (oldFiber === <span class="hljs-literal">null</span>) {
+      <span class="hljs-comment">// If we don't have any more existing children we can choose a fast path</span>
+      <span class="hljs-comment">// since the rest will all be insertions.</span>
+      <span class="hljs-keyword">for</span> (; newIdx &lt; newChildren.length; newIdx++) {
+        <span class="hljs-keyword">const</span> newFiber = createChild(
+          returnFiber,
+          newChildren[newIdx],
+          expirationTime,
+        );
+        <span class="hljs-keyword">if</span> (newFiber === <span class="hljs-literal">null</span>) {
+          <span class="hljs-keyword">continue</span>;
+        }
+        lastPlacedIndex = placeChild(newFiber, lastPlacedIndex, newIdx);
+        <span class="hljs-keyword">if</span> (previousNewFiber === <span class="hljs-literal">null</span>) {
+          <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Move out of the loop. This only happens for the first run.</span>
+          resultingFirstChild = newFiber;
+        } <span class="hljs-keyword">else</span> {
+          previousNewFiber.sibling = newFiber;
+        }
+        previousNewFiber = newFiber;
+      }
+      <span class="hljs-keyword">return</span> resultingFirstChild;
+    }
+</code></pre></div><p>把所有老数组元素按 key 或者是 index 放 Map 里，然后遍历新数组，根据新数组的 key 或者 index 快速找到老数组里面是否有可复用的。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-comment">// Add all children to a key map for quick lookups.</span>
+    <span class="hljs-keyword">const</span> existingChildren = mapRemainingChildren(returnFiber, oldFiber);
+
+    <span class="hljs-comment">// Keep scanning and use the map to restore deleted items as moves.</span>
+    <span class="hljs-keyword">for</span> (; newIdx &lt; newChildren.length; newIdx++) {
+      <span class="hljs-keyword">const</span> newFiber = updateFromMap(
+        existingChildren,
+        returnFiber,
+        newIdx,
+        newChildren[newIdx],
+        expirationTime,
+      );
+      <span class="hljs-keyword">if</span> (newFiber !== <span class="hljs-literal">null</span>) {
+        <span class="hljs-keyword">if</span> (shouldTrackSideEffects) {
+          <span class="hljs-keyword">if</span> (newFiber.alternate !== <span class="hljs-literal">null</span>) {
+            <span class="hljs-comment">// The new fiber is a work in progress, but if there exists a</span>
+            <span class="hljs-comment">// current, that means that we reused the fiber. We need to delete</span>
+            <span class="hljs-comment">// it from the child list so that we don't add it to the deletion</span>
+            <span class="hljs-comment">// list.</span>
+            existingChildren.delete(
+              newFiber.key === <span class="hljs-literal">null</span> ? newIdx : newFiber.key,
+            );
+          }
+        }
+        lastPlacedIndex = placeChild(newFiber, lastPlacedIndex, newIdx);
+        <span class="hljs-keyword">if</span> (previousNewFiber === <span class="hljs-literal">null</span>) {
+          resultingFirstChild = newFiber;
+        } <span class="hljs-keyword">else</span> {
+          previousNewFiber.sibling = newFiber;
+        }
+        previousNewFiber = newFiber;
+      }
+    }
+</code></pre></div><p>最后再删除没有被上述情况涉及的元素（也就是老数组中有新数组中无的元素）</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">if</span> (shouldTrackSideEffects) {
+  <span class="hljs-comment">// Any existing children that weren't consumed above were deleted. We need</span>
+  <span class="hljs-comment">// to add them to the deletion list.</span>
+  existingChildren.forEach(<span class="hljs-function"><span class="hljs-params">child</span> =&gt;</span> deleteChild(returnFiber, child));
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/110.7b785169.js" defer></script>
+  </body>
+</html>

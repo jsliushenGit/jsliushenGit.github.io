@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/127.f78e81b9.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p>title: webpack4原理及简单实现（二）-- AST
+author: jsliushen
+tags:</p> <ul><li>webpack
+categories:</li> <li>前端
+date: 2019-04-14 16:43:00</li></ul> <hr> <p>webpack使用各种loader来编译模块，那么具体的编译是怎么实现的呢。这时候就轮到主角AST--抽象语法树登场了。</p> <div class="language- extra-class"><pre><code>在计算机科学中，抽象语法树（abstract syntax tree 或者缩写为 AST），或者语法树（syntax tree），是源代码的抽象语法结构的树状表现形式，这里特指编程语言的源代码。树上的每个节点都表示源代码中的一种结构。之所以说语法是「抽象」的，是因为这里的语法并不会表示出真实语法中出现的每个细节。
+</code></pre></div><p>这棵树定义了代码本身，通过操作这颗树，可以精准的定位到赋值语句、声明语句和运算语句。对树的节点遍历修改属性，可以帮助我们对代码做各种修改。</p> <p>AST的使用场景非常广泛，包括代码语法的检查、代码风格的检查、代码的格式化、代码的高亮、代码错误提示、代码自动补全等等。</p> <p>将javascript源码转换成抽象语法树需要借助引擎，现在常用的引擎有</p> <ul><li>esprima</li> <li>acron (webpack使用的)</li> <li>Traceur</li> <li>UglifyJS2</li> <li>shift</li></ul> <p>这是在线的AST转换器：<a href="https://astexplorer.net/" title="AST转换器" target="_blank" rel="noopener noreferrer">AST转换器<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>。我们使用babylon引擎将代码 <code>const a = 1</code> 转化成AST后的格式如下所示：</p> <div class="language- extra-class"><pre><code>{
+  &quot;type&quot;: &quot;Program&quot;,
+  &quot;start&quot;: 0,
+  &quot;end&quot;: 11,
+  &quot;body&quot;: [
+    {
+      &quot;type&quot;: &quot;VariableDeclaration&quot;,
+      &quot;start&quot;: 0,
+      &quot;end&quot;: 11,
+      &quot;declarations&quot;: [
+        {
+          &quot;type&quot;: &quot;VariableDeclarator&quot;,
+          &quot;start&quot;: 6,
+          &quot;end&quot;: 11,
+          &quot;id&quot;: {
+            &quot;type&quot;: &quot;Identifier&quot;,
+            &quot;start&quot;: 6,
+            &quot;end&quot;: 7,
+            &quot;name&quot;: &quot;a&quot;
+          },
+          &quot;init&quot;: {
+            &quot;type&quot;: &quot;Literal&quot;,
+            &quot;start&quot;: 10,
+            &quot;end&quot;: 11,
+            &quot;value&quot;: 1,
+            &quot;raw&quot;: &quot;1&quot;
+          }
+        }
+      ],
+      &quot;kind&quot;: &quot;const&quot;
+    }
+  ],
+  &quot;sourceType&quot;: &quot;module&quot;
+}
+</code></pre></div><p>各字段的说明如下:</p> <div class="language- extra-class"><pre><code>type:描述该语句的类型 --变量声明语句
+kind：变量声明的关键字 -- var
+declaration: 声明的内容数组，里面的每一项也是一个对象
+	type: 描述该语句的类型 
+	id: 描述变量名称的对象
+		type：定义
+		name: 是变量的名字
+    init: 初始化变量值得对象
+		type: 类型
+		value: 值 &quot;is tree&quot; 不带引号
+		row: &quot;\&quot;is tree&quot;\&quot; 带引号
+</code></pre></div><p>AST的使用步骤可以归纳为3步：</p> <ol><li>通过引擎将代码转换陈AST</li> <li>遍历和更新AST</li> <li>将更新之后的AST再转换成代码</li></ol> <p>下面我们以acron为例，简单的演示一下AST的应用方式。我们希望把 <code>const a = 1</code> 这句代码编译成 <code>var a = 1</code></p> <h4 id="一、通过引擎将代码转换成ast"><a href="#一、通过引擎将代码转换成ast" class="header-anchor">#</a> 一、通过引擎将代码转换成AST</h4> <p>我们新建一个工程，安装依赖
+<code>npm i acorn estraverse escodegen</code><br>
+写好源码</p> <div class="language- extra-class"><pre><code>const acorn = require('acorn')
+const estraverse = require('estraverse')
+const escodegen = require('escodegen')
+
+let source = 'const a = 1'
+</code></pre></div><p>通过引擎将代码转换成AST需要调用babylon中的parse方法</p> <div class="language- extra-class"><pre><code>const acorn = require('acorn')
+const estraverse = require('estraverse')
+const escodegen = require('escodegen')
+
+let source = 'const a = 1'
+
+const ast = acorn.parse(source, {
+	sourceType: &quot;script&quot;,
+  locations: true
+})
+
+console.log(ast)
+</code></pre></div><p>打印生成的ast，和我们上面通过<a href="https://astexplorer.net/" title="AST转换器" target="_blank" rel="noopener noreferrer">AST转换器<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>转换生成的结果是一样的。这样我们就完成了第一步</p> <h4 id="二、遍历和更新ast"><a href="#二、遍历和更新ast" class="header-anchor">#</a> 二、遍历和更新AST</h4> <p>上述代码中引入的traverse就是用来遍历AST的。</p> <div class="language- extra-class"><pre><code>const acorn = require('acorn')
+const estraverse = require('estraverse')
+const escodegen = require('escodegen')
+
+let source = 'const a = 1'
+
+const ast = acorn.parse(source, {
+	sourceType: &quot;script&quot;,
+  locations: true
+})
+
+console.log(ast)
+
+estraverse.traverse(ast, {
+	enter(node) {
+    	// 找到kind为const的node
+		if (node.kind === 'const') {
+        	// 将kind修改为var
+			node.kind = 'var'
+		}
+	}
+})
+</code></pre></div><h4 id="三、将更新之后的ast再转换成代码"><a href="#三、将更新之后的ast再转换成代码" class="header-anchor">#</a> 三、将更新之后的AST再转换成代码</h4> <p>AST修改之后，我们需求将它再转换成代码，这一步使用escodegen模块</p> <div class="language- extra-class"><pre><code>const acorn = require('acorn')
+const estraverse = require('estraverse')
+const escodegen = require('escodegen')
+
+let source = 'const a = 1'
+
+const ast = acorn.parse(source, {
+	sourceType: &quot;script&quot;,
+  locations: true
+})
+
+console.log(ast)
+
+estraverse.traverse(ast, {
+	enter(node) {
+    	// 找到kind为const的node
+		if (node.kind === 'const') {
+        	// 将kind修改为var
+			node.kind = 'var'
+		}
+	}
+})
+
+// 将ast转化成代码
+let code = escodegen.generate(ast)
+
+console.log(code)   // var a = 1
+
+</code></pre></div><p>经过上面三个步骤，我们成功的将代码进行了修改。webpack中对模块的编译也和上述过程类似，只是代码逻辑更复杂，有兴趣的同学可以对AST深入研究。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/127.f78e81b9.js" defer></script>
+  </body>
+</html>

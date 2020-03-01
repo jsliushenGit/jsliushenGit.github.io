@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Fiber | 静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/108.2ac2e870.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link router-link-active">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link router-link-active">
+  知识库
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/repository/html/" class="sidebar-link">HTML</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>JavaScript</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/repository/vue/" class="sidebar-link">vue</a></li><li><a href="/repository/react/" class="sidebar-link">react</a></li><li><a href="/repository/standard/" class="sidebar-link">持续集成</a></li><li><a href="/repository/performance/" class="sidebar-link">性能优化</a></li><li><a href="/repository/monitoring/" class="sidebar-link">用户监控</a></li><li><a href="/repository/protocol/" class="sidebar-link">网络</a></li><li><a href="/repository/security/" class="sidebar-link">web安全</a></li><li><a href="/repository/browser/" class="sidebar-link">浏览器</a></li><li><a href="/repository/mobile/" class="sidebar-link">移动端</a></li><li><a href="/repository/desktop/" class="sidebar-link">桌面程序</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>node</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/repository/mongodb/" class="sidebar-link">mongodb</a></li><li><a href="/repository/nginx/" class="sidebar-link">nginx</a></li><li><a href="/repository/algorithm/" class="sidebar-link">算法</a></li><li><a href="/repository/dataStructure/" class="sidebar-link">数据结构</a></li><li><a href="/readBook/JavaScript%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E4%B8%8E%E5%BC%80%E5%8F%91%E5%AE%9E%E8%B7%B5/" class="sidebar-link">设计模式</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="fiber"><a href="#fiber" class="header-anchor">#</a> Fiber</h1> <h2 id="react16之前的问题"><a href="#react16之前的问题" class="header-anchor">#</a> react16之前的问题</h2> <p>react从状态变化到ui变化分为两步</p> <ol><li><p>协调阶段 <a href="https://zh-hans.reactjs.org/docs/reconciliation.html" target="_blank" rel="noopener noreferrer">reconciler<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>React 会自顶向下通过递归，遍历新数据生成新的 Virtual DOM，然后通过 Diff 算法，找到需要变更的元素(Patch)，放到更新队列里面去。</p></li> <li><p>渲染阶段 render</p></li></ol> <p>遍历操作DOM更新队列，通过调用宿主环境的API，实际更新渲染对应元素</p> <p>在协调阶段阶段，由于是采用的递归的遍历方式，这种也被成为 Stack Reconciler。这种方式有一个特点：一旦任务开始进行，就无法中断，那么js将一直占用主线程， 一直要等到整棵 Virtual DOM 树计算完成之后，才会把执行权交给渲染线程，那么这就会导致一些用户交互、动画等任务无法立即得到处理，就会有卡顿，非常的影响用户体验。</p> <h2 id="解决方案"><a href="#解决方案" class="header-anchor">#</a> 解决方案</h2> <p>合作式调度</p> <p>把渲染更新过程拆分成多个子任务，每次只做一小部分，做完看是否还有剩余时间，如果有继续下一个任务；如果没有，挂起当前任务，将时间控制权交给主线程，等主线程不忙的时候在继续执行。</p> <p>合作式调度主要就是用来分配任务的，当有更新任务来的时候，不会马上去做 Diff 操作，而是先把当前的更新送入一个 Update Queue 中，然后交给 Scheduler 去调度，Scheduler 会根据当前主线程的使用情况去处理这次 Update。</p> <p><img src="https://user-gold-cdn.xitu.io/2019/6/26/16b9161aa82b235f?imageslim" alt=""></p> <h2 id="什么是fiber"><a href="#什么是fiber" class="header-anchor">#</a> 什么是Fiber</h2> <p>一种可中断的调用任务的解决方案，它的特性如下:</p> <ul><li>增量渲染(把渲染任务拆分成块，匀到多帧)</li> <li>更新时能够暂停，终止，复用渲染任务</li> <li>给不同类型的更新赋予优先级</li> <li>并发方面新的基础能力</li></ul> <h2 id="fiber是如何工作的"><a href="#fiber是如何工作的" class="header-anchor">#</a> Fiber是如何工作的</h2> <ol><li>ReactDOM.render() 和 setState 的时候开始创建更新。</li> <li>将创建的更新加入任务队列，等待调度。</li> <li>在 requestIdleCallback 空闲时执行任务。</li> <li>从根节点开始遍历 Fiber Node，并且构建 WokeInProgress Tree。</li> <li>生成 effectList。</li> <li>根据 EffectList 更新 DOM。</li></ol> <h2 id="创建更新"><a href="#创建更新" class="header-anchor">#</a> 创建更新</h2> <p>创建更新的过程可以归纳为以下几步</p> <p>（1）获取节点对应的fiber对象
+（2）计算currentTime
+（3）根据（1）fiber和（2）currentTime计算fiber对象的expirationTime
+（4）根据（3）expirationTime创建update对象
+（5）将setState中要更新的对象赋值到（4）update.payload，ReactDOM.render是{element}
+（6）将callback赋值到（4）update.callback
+（7）update入队updateQueue
+（8）进行任务调度</p> <h3 id="fiber-node"><a href="#fiber-node" class="header-anchor">#</a> Fiber Node</h3> <div class="language-javascript extra-class"><pre><code class="language-javascript">{
+  <span class="hljs-comment">// 标记 Fiber 类型, 例如函数组件、类组件、宿主组件</span>
+  <span class="hljs-attr">tag</span>: WorkTag,
+  <span class="hljs-comment">// 节点元素类型, 是具体的类组件、函数组件、宿主组件(字符串)，如div span</span>
+  <span class="hljs-attr">type</span>: any,
+  
+  <span class="hljs-comment">// 节点状态</span>
+  <span class="hljs-comment">// 对于宿主组件，这里保存宿主组件的实例, 例如DOM节点。</span>
+  <span class="hljs-comment">// 对于类组件来说，这里保存类组件的实例</span>
+  <span class="hljs-comment">// 对于函数组件说，这里为空，因为函数组件没有实例</span>
+  <span class="hljs-attr">stateNode</span>: any,
+    
+  <span class="hljs-comment">// 单链表树结构</span>
+  <span class="hljs-attr">return</span>: Fiber | <span class="hljs-literal">null</span>,<span class="hljs-comment">// 指向他在Fiber节点树中的`parent`，用来在处理完这个节点之后向上返回，同时也是处理完成后返回结果所需要合并的目标</span>
+  <span class="hljs-attr">child</span>: Fiber | <span class="hljs-literal">null</span>,<span class="hljs-comment">// 指向自己的第一个子节点</span>
+  <span class="hljs-attr">sibling</span>: Fiber | <span class="hljs-literal">null</span>,  <span class="hljs-comment">// 指向自己的兄弟结构，兄弟节点的return指向同一个父节点</span>
+	
+  <span class="hljs-attr">key</span>: <span class="hljs-literal">null</span> | string,
+  
+  <span class="hljs-comment">// 更新相关</span>
+  <span class="hljs-attr">pendingProps</span>: any,  <span class="hljs-comment">// 新的变动带来的新的props</span>
+  <span class="hljs-attr">memoizedProps</span>: any,  <span class="hljs-comment">// 上一次渲染完成之后的props</span>
+  <span class="hljs-attr">updateQueue</span>: UpdateQueue&lt;any&gt; | <span class="hljs-literal">null</span>,  <span class="hljs-comment">// 该Fiber对应的组件产生的Update会存放在这个队列里面</span>
+  <span class="hljs-attr">memoizedState</span>: any, <span class="hljs-comment">// 上一次渲染的时候的state</span>
+    
+  <span class="hljs-comment">// Scheduler 相关</span>
+  <span class="hljs-attr">expirationTime</span>: ExpirationTime,  <span class="hljs-comment">// 代表任务在未来的哪个时间点应该被完成，不包括他的子树产生的任务</span>
+  <span class="hljs-comment">// 快速确定子树中是否有不在等待的变化</span>
+  <span class="hljs-attr">childExpirationTime</span>: ExpirationTime,
+    
+  <span class="hljs-comment">// 替身</span>
+  <span class="hljs-comment">// React 在 Reconciliation 过程中会构建一颗新的树(官方称为workInProgress tree，WIP树)，可以认为是    一颗表示当前工作进度的树。还有一颗表示已渲染界面的旧树，React就是一边和旧树比对，一边构建WIP树的。 alternate 指向旧树的同等节点。</span>
+  <span class="hljs-attr">alternate</span>: Fiber | <span class="hljs-literal">null</span>,
+
+  <span class="hljs-comment">// 副作用相关的</span>
+  <span class="hljs-attr">effectTag</span>: SideEffectTag, <span class="hljs-comment">// 用来记录Side Effect</span>
+  <span class="hljs-attr">nextEffect</span>: Fiber | <span class="hljs-literal">null</span>, <span class="hljs-comment">// 单链表用来快速查找下一个side effect</span>
+  <span class="hljs-attr">firstEffect</span>: Fiber | <span class="hljs-literal">null</span>,  <span class="hljs-comment">// 子树中第一个side effect</span>
+  <span class="hljs-attr">lastEffect</span>: Fiber | <span class="hljs-literal">null</span>, <span class="hljs-comment">// 子树中最后一个side effect</span>
+  ....
+};
+</code></pre></div><h2 id="调度"><a href="#调度" class="header-anchor">#</a> 调度</h2> <p>调度主要做3件事情</p> <div class="language- extra-class"><pre><code>1. 维护时间片
+2. 模拟浏览器 requestldleCallback API
+3. 调度列表和超时判断
+</code></pre></div><p>调度过程决定了下一个工作单元是什么</p> <h3 id="优先级策略"><a href="#优先级策略" class="header-anchor">#</a> 优先级策略</h3> <p>每个工作单元运行时有6种优先级</p> <ul><li>synchronous 与之前的stack reconciler操作一样，同步执行</li> <li>task 在next tick之前执行</li> <li>Animation 下一帧之前执行</li> <li>high 在不久的将来执行</li> <li>Low 稍微延迟（100～200ms）执行也没关系</li> <li>Offscreen 下一次render时或scroll时执行</li></ul> <p>synchronous首屏（首次渲染）用，要求尽量快，不管会不会阻塞UI线程。</p> <p>animation通过<code>requestAnimationFrame</code>来调度，这样在下一帧就能立即开始动画过程；</p> <p>后3个都是由<code>requestIdleCallback</code>回调执行的；</p> <p>offscreen指的是当前隐藏的、屏幕外的（看不见的）元素</p> <p>高优先级的比如键盘输入（希望立即得到反馈），低优先级的比如网络请求，让评论显示出来等等。另外，紧急的事件允许插队</p> <p>这样的优先级机制存在2个问题</p> <div class="language-html extra-class"><pre><code class="language-html">1. 生命周期函数怎么执行（可能被频频中断）：触发顺序、次数没有保证了
+2. starvation（低优先级饿死）：如果高优先级任务很多，那么低优先级任务根本没机会执行就饿死了   
+</code></pre></div><h2 id="更新流程"><a href="#更新流程" class="header-anchor">#</a> 更新流程</h2> <p>Reconciler 更新过程分为2步</p> <ol><li><p>（可中断）render/reconciliation 通过构造 WorkInProgress Tree 得出 Change。</p> <ol start="2"><li>（不可中断）commit 应用这些DOM change。</li></ol></li></ol> <p>更新过程中会维护一个WorkingInProgress tree(WIP)，WIP树就是一个缓冲，它在Reconciliation 完毕后一次性提交给浏览器进行渲染。它可以减少内存分配和垃圾回收, 另外一个重要的场景就是异常的处理，比如当一个节点抛出异常，仍然可以继续沿用旧树的节点，避免整棵树挂掉。你可以将 WIP 树想象成从旧树中 Fork 出来的功能分支，你在这新分支中添加或移除特性，即使是操作失误也不会影响旧的分支。当你这个分支经过了测试和完善，就可以合并到旧分支，将其替换掉. 这或许就是’提交(commit)阶段‘的提交一词的来源吧。</p> <h3 id="reconciliation"><a href="#reconciliation" class="header-anchor">#</a> reconciliation</h3> <p>Reconciliation的过程可以理解为创建WorkingInProgress tree的过程，具体过程如下</p> <div class="language-html extra-class"><pre><code class="language-html">	1. 如果当前节点不需要更新，直接把子节点clone过来，跳到5。需要更新的话打个tag
+  2. 更新当前节点状态（props，state，context等）
+  3. 调用shouldComponentUpdate()，返回false的话，跳到5
+  4. 调用render()获取新的子节点，并为子节点创建Fiber (diff过程)
+  5. 如果没有产生child fiber, 工作单元结束，把effect list归并到return(一般为父节点)，并把当前节点的sibling作为下一个工作单元；否则把child作为下一个工作单元
+  6. 检查是否还有剩余时间，如果没有剩余可用时间了，等到下一次主线程空闲时才开始下一个工作单元；否则立即开始下一个
+  7. 如果没有下一个工作单元了(回到了workInProgress tree的跟节点)，Reconciliation阶段结束，进入pendingCommit状态
+</code></pre></div><p>1～6是循环执行，7是出口。每次处理一个 Fiber，每次循环做完了看看有没有剩余时间。循环结束时，workInProgress tree的根节点身上的effect list就是收集到的所有side effect，因为每做完一个都向上归并。</p> <p>reconciliation阶段会执行如下生命周期</p> <ul><li>constructor</li> <li>componentWillMount 废弃</li> <li>componentWillReceiveProps 废弃</li> <li>static getDerivedStateFromProps</li> <li>shouldComponentUpdate</li> <li>componentWillUpdate 废弃</li> <li>render</li></ul> <p>由于 reconciliation 阶段是可中断的，一旦中断之后恢复的时候又会重新执行，所以很可能 reconciliation 阶段的生命周期方法会被多次调用，所以在 reconciliation 阶段的生命周期的方法是不稳定的，这也是 React 为什么要废弃 componentWillMount 和 componentWillReceiveProps方法而改为静态方法 getDerivedStateFromProps 的原因</p> <h3 id="commit"><a href="#commit" class="header-anchor">#</a> Commit</h3> <p>commit 阶段可以理解为就是将 Diff 的结果反映到真实 DOM 的过程。</p> <p>在 commit 阶段，在 commitRoot 里会根据 effect的 <a href="https://github.com/facebook/react/blob/504576306461a5ff339dc99691842f0f35a8bf4c/packages/shared/ReactSideEffectTags.js" target="_blank" rel="noopener noreferrer">effectTag<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ，进行对应的插入、更新、删除操作，根据 tag 不同，调用不同的更新方法。</p> <p>commit阶段调用生命周期</p> <ul><li>getSnapshotBeforeUpdate()</li> <li>componentDidMount</li> <li>componentDidUpdate</li> <li>componentWillUnmount</li></ul> <p>commit过程同步执行，不可中断。分为2步</p> <ol><li>丢弃原始fiber tree，将workInProgress tree作为新的fiber tree</li> <li>将更新commit到DOM树上</li></ol> <p>commit阶段的工作量比较大，所以尽量不要在此阶段的生命周期函数中做大量操作(操作DOM等)</p> <h2 id="遍历方式"><a href="#遍历方式" class="header-anchor">#</a> 遍历方式</h2> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-comment">/**
+ * <span class="hljs-doctag">@params </span>fiber 当前需要处理的节点
+ * <span class="hljs-doctag">@params </span>topWork 本次更新的根节点
+ */</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">performUnitOfWork</span>(<span class="hljs-params">fiber: Fiber, topWork: Fiber</span>) </span>{
+  <span class="hljs-comment">// 对该节点进行处理</span>
+  beginWork(fiber);
+
+  <span class="hljs-comment">// 如果存在子节点，那么下一个待处理的就是子节点</span>
+  <span class="hljs-keyword">if</span> (fiber.child) {
+    <span class="hljs-keyword">return</span> fiber.child;
+  }
+
+  <span class="hljs-comment">// 没有子节点了，上溯查找兄弟节点</span>
+  <span class="hljs-keyword">let</span> temp = fiber;
+  
+  <span class="hljs-keyword">while</span> (temp) {
+    completeWork(temp);
+
+    <span class="hljs-comment">// 到顶层节点了, 退出</span>
+    <span class="hljs-keyword">if</span> (temp === topWork) {
+      <span class="hljs-keyword">break</span>
+    }
+
+    <span class="hljs-comment">// 找到下一个要处理的兄弟节点</span>
+    <span class="hljs-keyword">if</span> (temp.sibling) {
+      <span class="hljs-keyword">return</span> temp.sibling;
+    }
+
+    <span class="hljs-comment">// 没有, 继续上溯</span>
+    temp = temp.return;
+  }
+}
+</code></pre></div><h2 id="图解"><a href="#图解" class="header-anchor">#</a> 图解</h2> <div class="language-react extra-class"><pre><code class="language-react">import React from 'react';
+import ReactDOM from 'react-dom'
+
+class List extends React.Component {
+  render () {
+    return (
+      [1,2,3].map((item)=&gt;{
+        return &lt;span&gt;span&lt;/span&gt;
+      })
+    )
+  }
+}
+
+class App extends React.Component {
+    render () {
+      return (
+        [&lt;button&gt;按钮&lt;/button&gt;,&lt;List/&gt;,&lt;div&gt;div&lt;/div&gt;]
+      );
+    }
+}
+ReactDOM.render(
+ &lt;App /&gt;,
+ document.getElementById(&quot;root&quot;)
+)
+</code></pre></div><h3 id="初次渲染"><a href="#初次渲染" class="header-anchor">#</a> 初次渲染</h3> <ol><li>创建一个RootFiber节点</li></ol> <p>![image-20200103171701313](/Users/liushen/Library/Application Support/typora-user-images/image-20200103171701313.png)</p> <ol start="2"><li>沿着子节点不断的创建fiber子节点，如果发现子节点是一个数组，会把子节点都创建好，之后拿到第一个子节点再往下走。</li></ol> <p>遍历顺序为: App -&gt; App -&gt; button -&gt; list -&gt; span1 -&gt; span2 -&gt; span3 -&gt; div</p> <p>![image-20200103172231514](/Users/liushen/Library/Application Support/typora-user-images/image-20200103172231514.png)</p> <p>初次渲染也可以看作一个更新的过程，只不过每次更新都是创建一个新节点。</p> <h3 id="更新fiber-tree"><a href="#更新fiber-tree" class="header-anchor">#</a> 更新Fiber Tree</h3> <div class="language-react extra-class"><pre><code class="language-react">import React from 'react';
+import ReactDOM from 'react-dom'
+
+class List extends React.Component {
+  render () {
+    const { list } = this.props;
+    return (
+      list.map((item)=&gt;{
+        return &lt;span&gt;{item}&lt;/span&gt;
+      })
+    )
+  }
+}
+
+class App extends React.Component {
+    constructor() {
+      super();
+      this.state = {
+        list:[1,2,3]
+      }
+    }
+    clickButton = () =&gt; {
+      this.setState({
+        list:[1,4,3]
+      })
+    }
+    render () {
+      return (
+        [&lt;button onClick={this.clickButton}&gt;按钮&lt;/button&gt;,&lt;List list={this.state.list}/&gt;,&lt;div&gt;div&lt;/div&gt;]
+      );
+    }
+}
+ReactDOM.render(
+ &lt;App /&gt;,
+ document.getElementById(&quot;root&quot;)
+)
+</code></pre></div><p>点击按钮，更新span2</p> <p>当遍历到span2节点时候，发现span2节点是需要更新的，因为它身上有个叫effectTag的标志，值为4表示的是要更新本节点。这个节点需要更新所以把span2节点记录在父节点的firstEffect链表上</p> <p>![image-20200105233724980](/Users/liushen/Library/Application Support/typora-user-images/image-20200105233724980.png)</p> <p>当遍历到list节点的时候，因为它身上firstEffect不为空，所以它会把他身上的firstEffect接到父节点的身上</p> <p>![image-20200105233800945](/Users/liushen/Library/Application Support/typora-user-images/image-20200105233800945.png)</p> <p>遍历至app节点时</p> <p>![image-20200105233834477](/Users/liushen/Library/Application Support/typora-user-images/image-20200105233834477.png)</p> <h1 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h1> <ol><li><p>问题</p> <p>React在一些响应体验要求较高的场景不适用，比如动画，布局和手势，根本原因是渲染/更新过程一旦开始无法中断，持续占用主线程，主线程忙于执行JS，无暇他顾（布局、动画），造成掉帧、延迟响应（甚至无响应）等不佳体验</p></li> <li><p>解决方案</p> <p>把diff过程拆分为小块任务，通过合理的调度机制来控制时间（更细粒度、更强的控制力）</p></li> <li><p>什么能拆，什么不能拆</p> <p>渲染/更新过程分为2个阶段</p> <ol><li><p>diff ~ render/reconciliation</p></li> <li><p>patch ~ commit</p></li></ol> <p>diff的实际工作是对比 prevInstance 和 nextInstance 的状态，找出差异及其对应的DOM change。diff本质上是一些计算（遍历、比较），是可拆分的（算一半待会儿接着算）</p> <p>patch阶段把本次更新中的所有DOM change应用到DOM树，是一连串的DOM操作。这些DOM操作虽然看起来也可以拆分（按照change list一段一段做），但这样做一方面可能造成DOM实际状态与维护的内部状态不一致，另外还会影响体验。而且，一般场景下，DOM更新的耗时比起diff及生命周期函数耗时不算什么，拆分的意义不很大</p></li> <li><p>怎么拆</p> <p>Fiber的拆分单位是fiber（fiber tree上的一个节点），实际上就是按虚拟DOM节点拆，因为fiber tree是根据vDOM tree构造出来的，树结构一模一样，只是节点携带的信息有差异。</p> <p>以fiber为工作单元，每个组件实例和每个DOM节点抽象表示的实例都是一个工作单元。工作循环中，每次处理一个fiber，处理完可以中断/挂起整个工作循环</p></li> <li><p>如何调度任务</p> <ol><li>工作循环</li> <li>优先级机制</li></ol> <p>工作循环是基本的任务调度机制，工作循环中每次处理一个任务（工作单元），处理完毕有一次喘息的机会。每个工作单元结束检查是否还有时间做下一个，没时间了就先“挂起”。</p> <p>优先级机制用来处理突发事件与优化次序，例如：</p> <ul><li>到commit阶段了，提高优先级</li> <li>高优任务做一半出错了，给降一下优先级</li> <li>抽空关注一下低优任务，别给饿死了</li> <li>如果对应DOM节点此刻不可见，给降到最低优先级</li></ul> <p>这些策略用来动态调整任务调度，是工作循环的辅助机制，最先做最重要的事情</p></li> <li><p>如何中断/恢复</p> <p>中断：检查当前正在处理的工作单元，保存当前成果（<code>firstEffect, lastEffect</code>），修改tag标记一下，迅速收尾并再开一个<code>requestIdleCallback</code>，下次有机会再做</p> <p>断点恢复：下次再处理到该工作单元时，看tag是被打断的任务，接着做未完成的部分或者重做</p> <p>P.S.无论是时间用尽“自然”中断，还是被高优任务粗暴打断，对中断机制来说都一样</p></li> <li><p>如何收集任务结果</p> <ol><li>找到根节点优先级最高的workInProgress tree，取其待处理的节点（代表组件或DOM节点）</li> <li>检查当前节点是否需要更新，不需要的话，直接到4</li> <li>标记一下（打个tag），更新自己（组件更新<code>props</code>，<code>context</code>等，DOM节点记下DOM change），并为孩子生成workInProgress node</li> <li>如果没有产生子节点，归并effect list（包含DOM change）到父级</li> <li>把孩子或兄弟作为待处理节点，准备进入下一个工作循环。如果没有待处理节点（回到了workInProgress tree的根节点），工作循环结束</li></ol> <p>通过每个节点更新结束时 向上归并effect list 来收集任务结果，reconciliation结束后，根节点的effect list里记录了包括DOM change在内的所有side effect</p></li></ol> <h1 id="未来"><a href="#未来" class="header-anchor">#</a> 未来</h1> <p>拆分任务，并行执行 (Fiber reconciler + web worker)。react已经做好准备了，期待react 17</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/108.2ac2e870.js" defer></script>
+  </body>
+</html>

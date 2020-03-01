@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/134.2f0de0be.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p>title: javascript再出发：模拟call和apply的实现
+author: jsliushen
+tags:</p> <ul><li>javascript
+categories:</li> <li>technology
+date: 2017-10-29 17:12:00</li></ul> <hr> <p>call方法是javascript中很常用的一个方法，其定义是：
+<pre>call()方法调用一个函数，其具有一个指定的this值和分别地提供的参数</pre>
+简单来说，call方法可以在指定函数this的情况下调用这个函数，其余的参数和返回值部分不受影响。举个栗子：</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+    <span class="hljs-keyword">var</span> obj = {
+    	<span class="hljs-attr">a</span>: <span class="hljs-number">2</span>
+    }
+    <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fun</span>(<span class="hljs-params">name,age</span>)</span>{
+    	<span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.a);
+        <span class="hljs-keyword">return</span> {
+        	<span class="hljs-attr">name</span>: name,
+            <span class="hljs-attr">age</span>: age
+        }
+    }
+    fun(<span class="hljs-string">&quot;zhangsan&quot;</span>,<span class="hljs-number">18</span>);  <span class="hljs-comment">//打印1，返回{name:&quot;zhangsan&quot;,age:18}</span>
+    fun.call(obj,<span class="hljs-string">&quot;zhangsan&quot;</span>,<span class="hljs-number">18</span>); <span class="hljs-comment">//打印2，返回{name:&quot;zhangsan&quot;,age:18}</span>
+</code></pre></div><p>总结一下：</p> <ul><li>函数执行了</li> <li>this指向第一个参数</li> <li>其他的参数照常传递</li> <li>能有返回值</li> <li>补充一点，第一个参数为null时，this默认执行window</li></ul> <p>下面我们就根据上面的特点，一步一步来模拟实现call</p> <p>还是以上面的函数 <code>fun</code> 和对象 <code>obj</code> 为例</p> <h2 id="第一版"><a href="#第一版" class="header-anchor">#</a> 第一版</h2> <p>先来实现前两个功能，想指定函数的this，我们可以通过对象调用的方式，也就是<code>obj.fun()</code>,这时候fun中的this就指向obj了，我们来实现第一版代码：</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-built_in">Function</span>.prototype.myCall=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context</span>)</span>{
+    	<span class="hljs-comment">//首先获取函数fun，这里可以通过this来获取,obj也就是参数context啦</span>
+        context.fn=<span class="hljs-keyword">this</span>;
+        <span class="hljs-comment">//将fn设为obj的一个方法</span>
+        context.fn();
+        <span class="hljs-comment">//莫名其妙给obj添加了一个方法总归是不好的，调用完成之后记得删掉这个方法</span>
+        <span class="hljs-keyword">delete</span> context.fn;
+    }
+</code></pre></div><p>想通过obj.fun()的方式调用，把fun设置为obj的一个方法就好啦，记得调用之后删除。下面我们来测试一下</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	fun.myCall(context);  <span class="hljs-comment">//打印2</span>
+</code></pre></div><h2 id="看到打印出2的时候还是很高兴的，终于走出第一步了，但是别高兴的太早了，下面还有好几步。第二版"><a href="#看到打印出2的时候还是很高兴的，终于走出第一步了，但是别高兴的太早了，下面还有好几步。第二版" class="header-anchor">#</a> 看到打印出2的时候还是很高兴的，终于走出第一步了，但是别高兴的太早了，下面还有好几步。
+第二版</h2> <p>再来解决传参数和返回值的问题，参数是不固定的，但是我们有<code>arguments</code>对象，可以通过<code>arguments</code>获取参数，然后依次传给fun,来看代码</p> <blockquote><p>对<code>arguments</code>对象不熟悉的可以另外查资料学习，这里就不展开啦，当然我后续会写关于arguments的文章。</p></blockquote> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-built_in">Function</span>.prototype.myCall=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context</span>)</span>{
+    	context.fn=<span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">var</span> args = [];  <span class="hljs-comment">//用来存储参数</span>
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>,length = <span class="hljs-built_in">arguments</span>.length;i &lt; length;i++){
+        	args.push(<span class="hljs-built_in">arguments</span>[i]);
+        }
+        <span class="hljs-comment">//注意arguments的第一个参数是指定this的对象，从第二个参数开始才是传给fun的函数，所以从1开始循环</span>
+        <span class="hljs-keyword">var</span> result = context.fn(...args); <span class="hljs-comment">//接收返回值</span>
+        <span class="hljs-keyword">delete</span> context.fn;
+        <span class="hljs-keyword">return</span> result;
+    }
+</code></pre></div><p>调用试试：</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-keyword">var</span> result = fun.myCall(obj,<span class="hljs-string">&quot;zhangsan&quot;</span>,<span class="hljs-number">18</span>);  <span class="hljs-comment">//打印2</span>
+    <span class="hljs-built_in">console</span>.log(result);  <span class="hljs-comment">//打印{name:&quot;zhangsan&quot;,age:18}</span>
+</code></pre></div><p>又实现了，但是这里有个问题，在myCall中调用fn的时候，我们给函数穿参数的方式使用的是es6的展开运算符... ，这里考虑到兼容性，我们尽量使用老一点的方式，这里推荐使用eval函数，此时代码是这样的</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-built_in">Function</span>.prototype.myCall=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context</span>)</span>{
+    	context.fn=<span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">var</span> args = [];
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>,length = <span class="hljs-built_in">arguments</span>.length;i &lt; length;i++){
+        	args.push(<span class="hljs-string">'arguments['</span>+i+<span class="hljs-string">']'</span>);
+        }
+        <span class="hljs-keyword">var</span> result = <span class="hljs-built_in">eval</span>(<span class="hljs-string">'context.fn('</span>+args+<span class="hljs-string">')'</span>);
+        <span class="hljs-keyword">delete</span> context.fn;
+        <span class="hljs-keyword">return</span> result;
+    }
+</code></pre></div><h2 id="大家可以复制代码测试一下，关于eval，和arguments一样，大家可以先查阅资料学习一下，这里不展开，后续我会写关于它的文章。最终版"><a href="#大家可以复制代码测试一下，关于eval，和arguments一样，大家可以先查阅资料学习一下，这里不展开，后续我会写关于它的文章。最终版" class="header-anchor">#</a> 大家可以复制代码测试一下，关于eval，和arguments一样，大家可以先查阅资料学习一下，这里不展开，后续我会写关于它的文章。
+最终版</h2> <p>还剩最后一个个功能，第一个参数为null时，this默认指向window，这个就很好实现啦，只需要判断一下context的值，为null时，让它默认为window，来看代码</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-built_in">Function</span>.prototype.myCall=<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">context</span>)</span>{
+    	<span class="hljs-keyword">var</span> context = context || <span class="hljs-built_in">window</span>; 
+    	context.fn = <span class="hljs-keyword">this</span>;
+        <span class="hljs-keyword">var</span> args = [];
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">1</span>,length = <span class="hljs-built_in">arguments</span>.length;i &lt; length;i++){
+        	args.push(<span class="hljs-built_in">arguments</span>[i]);
+        }
+        <span class="hljs-keyword">var</span> result = context.fn(...args);
+        <span class="hljs-keyword">delete</span> context.fn;
+        <span class="hljs-keyword">return</span> result;
+    }
+</code></pre></div><p>调用一下：</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-keyword">var</span> result = fun.myCall(context,<span class="hljs-string">&quot;zhangsan&quot;</span>,<span class="hljs-number">18</span>);  <span class="hljs-comment">//打印2</span>
+    <span class="hljs-built_in">console</span>.log(result);  <span class="hljs-comment">//打印{name:&quot;zhangsan&quot;,age:18}</span>
+    
+    <span class="hljs-keyword">var</span> result = fun.myCall(<span class="hljs-literal">null</span>,<span class="hljs-string">&quot;zhangsan&quot;</span>,<span class="hljs-number">18</span>);  <span class="hljs-comment">//打印1</span>
+    <span class="hljs-built_in">console</span>.log(result);  <span class="hljs-comment">//打印{name:&quot;zhangsan&quot;,age:18}</span>
+</code></pre></div><h2 id="搞定！apply"><a href="#搞定！apply" class="header-anchor">#</a> 搞定！
+apply</h2> <p>apply和call功能一样，只是call传给函数的参数使用的是列表的形式，使用逗号隔开。而apply的第二个参数是参数数组，直接把参数放在数组里。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-comment">//call</span>
+    fun.call(obj,arg1,arg2,arg3......)
+    <span class="hljs-comment">//apply</span>
+    fun.apply(obj,[arg1,arg2,arg3......])
+</code></pre></div><p>模拟实现apply的思路和call一样，这里就不再分析一遍了，大家可以仿照思路自己试试实现，我直接贴出代码</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	<span class="hljs-built_in">Function</span>.prototype.apply = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">context, arr</span>) </span>{
+    <span class="hljs-keyword">var</span> context = context || <span class="hljs-built_in">window</span>;
+    context.fn = <span class="hljs-keyword">this</span>;
+    <span class="hljs-keyword">var</span> args = [];
+    <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>, len = arr.length; i &lt; len; i++) {
+       args.push(<span class="hljs-string">'arr['</span> + i + <span class="hljs-string">']'</span>);
+    }
+    <span class="hljs-keyword">var</span> result = <span class="hljs-built_in">eval</span>(<span class="hljs-string">'context.fn('</span> + args + <span class="hljs-string">')'</span>)
+    <span class="hljs-keyword">delete</span> context.fn
+    <span class="hljs-keyword">return</span> result;
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/134.2f0de0be.js" defer></script>
+  </body>
+</html>

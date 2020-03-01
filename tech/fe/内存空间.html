@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/130.00f0a837.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/136.54e69925.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p>title: javaScript再出发：内存空间
+author: jsliushen
+tags:</p> <ul><li>javascript
+categories:</li> <li>technology
+date: 2017-10-02 21:57:00</li></ul> <hr> <p>作为一门高级语言，JS并不像C/C++那样拥有对内存的完全掌控。JS中内存的分配和回收都是自动完成的，内存在不使用的时候会被垃圾回收器自动回收。正因如此，许多人认为JS不用太关心内存管理的问题，但如果不了解JS的内存管理机制，我们会非常容易造成内存泄漏（内存无法被回收）的问题。</p> <h3 id="内存的生命周期"><a href="#内存的生命周期" class="header-anchor">#</a> 内存的生命周期</h3> <p>JS环境中分配的内存一般有如下生命周期：</p> <ul><li><p>内存分配：当我们申明变量、函数、对象的时候，系统会自动为他们分配内存</p></li> <li><p>内存使用：即读写内存，也就是使用变量、函数等</p></li> <li><p>内存回收：使用完毕，由垃圾回收自动回收不再使用的内存</p></li></ul> <div class="language-javaScript extra-class"><pre><code class="language-javaScript"><span class="hljs-keyword">var</span> a = <span class="hljs-number">1</span>;
+</code></pre></div><p>这句简单的代码其实已经包含了内存分配和内存使用两步，首先在内存中为变量a分配一个空间，然后在这个空间里存入一个数字1。至于内存回收，我们后面再做介绍。</p> <h3 id="堆内存和栈内存"><a href="#堆内存和栈内存" class="header-anchor">#</a> 堆内存和栈内存</h3> <p>我们来看一道很常见的面试题</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">var</span> a=<span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> b=a;
+b=<span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(a)；   <span class="hljs-comment">//1</span>
+<span class="hljs-built_in">console</span>.log(b);    <span class="hljs-comment">//2</span>
+
+<span class="hljs-keyword">var</span> obj1={<span class="hljs-attr">a</span>:<span class="hljs-number">1</span>};
+<span class="hljs-keyword">var</span> obj2=obj1;
+obj2.a=<span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(a);     <span class="hljs-comment">//{a:2}</span>
+<span class="hljs-built_in">console</span>.log(b);     <span class="hljs-comment">//{a:2}</span>
+</code></pre></div><p>代码的第一部分，b的值改变时，a的值不受影响。第二部分，obj2.a改变时，obj1受到影响，一起改变。这里的a，b和obj1，obj2有什么区别，为什么会有不同的效果。下面先介绍一下内存空间的分类：一种叫做栈（stack），另一种叫做堆（heap）；</p> <p>栈中的数据块按照一定次序存放（后进先出），栈结构和羽毛球筒存取羽毛球很相似，大家可以脑补一下。假设羽毛球筒中按循序存放了1，2，3，4，5个球，最底下是1号球，最上面是5好球，很明显1号是最先放入筒中的。现在我想使用羽毛球，最先使用的就应该是5号球，这就是所谓的后进先出。同样，如果我想使用4号球，就必须先取出5号球，然后才能取出4号球。</p> <p>堆数据结构存取数据的方式，则与书架与书非常相似。
+书虽然也整齐的存放在书架上，但是我们只要知道书的名字，我们就可以很方便的取出我们想要的书，而不用像从羽毛球筒里取羽毛球一样，非得将上面的羽毛球拿出来才能取到中间的某一个羽毛球。好比在JSON格式的数据中，我们存储的key-value是可以无序的，因为顺序的不同并不影响我们的使用，我们只需要关心书的名字。</p> <p>下面用几句代码和一张图来帮助大家理解内存空间</p> <div class="language- extra-class"><pre><code>var a=1;
+var b=false;
+var c={name:&quot;zhangSan&quot;,age:20}
+var d=[1,2,3,4]
+</code></pre></div><p><img src="/images/stackandheap.jpg" alt=""></p> <p>我们可以看到，变量a，b和变量c，d在内存空间中的存储方式不一样，这种不同的存储方式就造成了他们在进行赋值等操作的时候会有不同的行为，而这和他们的数据类型有关。在javaScript中，数据类型可以分为两种：</p> <p>值类型：数值、布尔值、null、undefined。</p> <p>引用类型：对象、数组、函数</p> <p>对于值类型的变量，数据存储在栈内存中。对于引用类型的变量，数据分两部分存储，一部分是对象的内存地址（指针），存储在栈内存中，一部分是对象真实的数据，存储在堆内存中。</p> <p>理解这个之后，我们再来分析一下前面提到的面试题。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">var</span> a=<span class="hljs-number">1</span>;
+<span class="hljs-keyword">var</span> b=a;
+b=<span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(a)；   <span class="hljs-comment">//1</span>
+<span class="hljs-built_in">console</span>.log(b);    <span class="hljs-comment">//2</span>
+
+<span class="hljs-keyword">var</span> obj1={<span class="hljs-attr">a</span>:<span class="hljs-number">1</span>};
+<span class="hljs-keyword">var</span> obj2=obj1;
+obj2.a=<span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(obj1);     <span class="hljs-comment">//{a:2}</span>
+<span class="hljs-built_in">console</span>.log(obj2);     <span class="hljs-comment">//{a:2}</span>
+</code></pre></div><p>第一部分，第一句代码，声明一个变量a，然后赋值为1，这一部分相当于在内存中开辟了一个新的空间，取名叫a，然后在这个空间里存储了一个值1。
+第二句代码，声明一个变量b，然后将a赋值给它。这一部分相当于在内存中新开辟了一个空间，取名叫b，然后在这个空间里放上a的值（把a的值复制一份给b），也就是1。
+这两句代码完成后，栈内存中多了两个空间，a和b，都存储着1。然后第三句代码把b重新赋值为2，相当于把空间b里的值换了一个，这个时候和a没有关系，a中的值不受影响。</p> <p><img src="/images/stackandheap2.png" alt=""></p> <p>第二部分，第一句代码，声明一个变量obj1，赋值为一个对象{a:1}。这个时候在内存中开辟了一个新的空间叫做obj1，里面存储着{a:1}在堆内存中的地址，假设是0x234hda。
+第二句代码，声明一个变量obj2，然后将obj1的值赋给他。这个时候在内存中开辟了一个新的存储空间，取名叫obj2，然后在这个空间里放上obj1的值（把这个地址复制一份给obj2），也就是0x234hda。
+这两句代码完成之后，obj1和obj2的栈内存中都存储的是0x234hda。然后执行第三句代码obj2.a=2,这时候发生的事情如下：根据obj2的值0x234hda找到堆内存中存储着的{a:1},然后找到属性a，把它修改为2。这个时候obj1和obj2的栈内存中存储的依然是0x234hda，但是这个地址所对应的对象{a:1}已经变成了{a:2}。</p> <p>继续执行代码，打印obj1,这个时候根据obj1中存储的0x234hda地址找到那个对象{a:2},打印出来，于是我们就看到了{a:2}。打印obj2,这个时候根据obj2中存储的0x234hda地址找到那个对象{a:2},打印出来，于是我们就看到了{a:2}。</p> <p>这就是为什么我们修改了obj1之后，obj2也会受到影响。
+<img src="/images/stackandheap3.png" alt=""></p> <p>为了帮助大家理解，我再举一个生活化的例子。小明和小华住在一个寝室，有一天小明买了一袋洗衣粉，放在了寝室的东南角。第二天小华想找小明借洗衣粉，小明说洗衣粉在“寝室东南角”，小华根据这个地址找到了洗衣粉，用了一半。第三天，小明去用洗衣粉，根据“寝室东南角”找，这个时候他就发现洗衣粉只剩下一半了。</p> <p>以上就是值类型，引用类型以及堆内存，栈内存的概念讲解，如果有不理解的或者有不同见解的同学，欢迎留言讨论。最后我们再说明一下，当内存中的数据使用完毕时，javaScript是如何对他们进行回收的。</p> <h3 id="垃圾回收算法"><a href="#垃圾回收算法" class="header-anchor">#</a> 垃圾回收算法</h3> <p>对垃圾回收算法来说，核心思想就是如何判断内存已经不再使用了。下面介绍两种常见浏览器的垃圾回收算法。</p> <h4 id="引用计数算法"><a href="#引用计数算法" class="header-anchor">#</a> 引用计数算法</h4> <p>引用计数算法定义“内存不再使用”的标准很简单，就是看一个对象是否有指向它的引用。如果没有其他对象指向它了，说明该对象已经不再需了。</p> <p>下面来看个例子：</p> <div class="language-javaScript extra-class"><pre><code class="language-javaScript"><span class="hljs-comment">// 创建一个对象person，他有两个指向属性age和name的引用</span>
+<span class="hljs-keyword">var</span> person = {
+    <span class="hljs-attr">age</span>: <span class="hljs-number">18</span>,
+    <span class="hljs-attr">name</span>: <span class="hljs-string">'zhangSan'</span>
+};
+
+person.name = <span class="hljs-literal">null</span>; <span class="hljs-comment">// 虽然设置为null，但因为person对象还有指向name的引用，因此name不会回收</span>
+
+<span class="hljs-keyword">var</span> p = person; 
+person = <span class="hljs-number">1</span>;         <span class="hljs-comment">//原来的person对象被赋值为1，但因为有新引用p指向原person对象，因此它不会被回收</span>
+
+p = <span class="hljs-literal">null</span>;           <span class="hljs-comment">//原person对象已经没有引用，很快会被回收</span>
+</code></pre></div><p>由上面可以看出，引用计数算法是个简单有效的算法。但它却存在一个致命的问题：循环引用。如果两个对象相互引用，尽管他们已不再使用，垃圾回收器不会进行回收，导致内存泄露。</p> <div class="language-javaScript extra-class"><pre><code class="language-javaScript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">cycle</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> obj1 = {};
+    <span class="hljs-keyword">var</span> obj2 = {};
+    obj1.a = obj2;
+    obj2.a = obj1; 
+}
+
+cycle();
+</code></pre></div><p>上面我们申明了一个cycle函数，其中包含两个相互引用的对象。在调用函数结束后，对象o1和o2实际上已离开函数范围，因此不再需要了。但根据引用计数的原则，他们之间的相互引用依然存在，因此这部分内存不会被回收，内存泄露不可避免了。</p> <p>正是因为有这个严重的缺点，这个算法在现代浏览器中已经被下面要介绍的标记清除算法所取代了。但绝不可认为该问题已经不再存在了，因为还占有大量市场的IE6、IE7使用的正是这一算法。</p> <h4 id="标记清除算法"><a href="#标记清除算法" class="header-anchor">#</a> 标记清除算法</h4> <p>上面说过，现代的浏览器已经不再使用引用计数算法了。现代浏览器通用的大多是基于标记清除算法的某些改进算法，总体思想都是一致的。</p> <p>标记清除算法将“不再使用的对象”定义为“无法达到的对象”。简单来说，就是从根部（在JS中就是全局对象）出发定时扫描内存中的对象。凡是能从根部到达的对象，都是还需要使用的。那些无法由根部出发触及到的对象被标记为不再使用，稍后进行回收。</p> <p>从这个概念可以看出，无法触及的对象包含了没有引用的对象这个概念（没有任何引用的对象也是无法触及的对象）。但反之未必成立。</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/130.00f0a837.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>静水流深</title>
+    <meta name="description" content="因上努力 果上随缘">
+    <meta name="generator" content="VuePress 1.3.0">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.54626788.css" as="style"><link rel="preload" href="/assets/js/app.94455cae.js" as="script"><link rel="preload" href="/assets/js/3.46e2d97a.js" as="script"><link rel="preload" href="/assets/js/136.54e69925.js" as="script"><link rel="prefetch" href="/assets/js/1.31cf2ec8.js"><link rel="prefetch" href="/assets/js/10.1b115c18.js"><link rel="prefetch" href="/assets/js/100.48ac91c6.js"><link rel="prefetch" href="/assets/js/101.d6ebf40b.js"><link rel="prefetch" href="/assets/js/102.d51b5998.js"><link rel="prefetch" href="/assets/js/103.dacdae82.js"><link rel="prefetch" href="/assets/js/104.eaafbc6b.js"><link rel="prefetch" href="/assets/js/105.387bcd14.js"><link rel="prefetch" href="/assets/js/106.7aadd79d.js"><link rel="prefetch" href="/assets/js/107.fa96ea52.js"><link rel="prefetch" href="/assets/js/108.2ac2e870.js"><link rel="prefetch" href="/assets/js/109.003466c2.js"><link rel="prefetch" href="/assets/js/11.36aed0a1.js"><link rel="prefetch" href="/assets/js/110.7b785169.js"><link rel="prefetch" href="/assets/js/111.aa26d5a8.js"><link rel="prefetch" href="/assets/js/112.a4f7a2af.js"><link rel="prefetch" href="/assets/js/113.58f60ffb.js"><link rel="prefetch" href="/assets/js/114.5f4f3292.js"><link rel="prefetch" href="/assets/js/115.6e608edf.js"><link rel="prefetch" href="/assets/js/116.c3f52f15.js"><link rel="prefetch" href="/assets/js/117.d0f1ee75.js"><link rel="prefetch" href="/assets/js/118.0d02556b.js"><link rel="prefetch" href="/assets/js/119.3be8cf42.js"><link rel="prefetch" href="/assets/js/12.b069f455.js"><link rel="prefetch" href="/assets/js/120.71898050.js"><link rel="prefetch" href="/assets/js/121.e683102c.js"><link rel="prefetch" href="/assets/js/122.3870a1bc.js"><link rel="prefetch" href="/assets/js/123.b6709d56.js"><link rel="prefetch" href="/assets/js/124.4056a7fc.js"><link rel="prefetch" href="/assets/js/125.05c0cff6.js"><link rel="prefetch" href="/assets/js/126.bbcde9c3.js"><link rel="prefetch" href="/assets/js/127.f78e81b9.js"><link rel="prefetch" href="/assets/js/128.59121021.js"><link rel="prefetch" href="/assets/js/129.daaddb18.js"><link rel="prefetch" href="/assets/js/13.2a546bf0.js"><link rel="prefetch" href="/assets/js/130.00f0a837.js"><link rel="prefetch" href="/assets/js/131.563da5dc.js"><link rel="prefetch" href="/assets/js/132.43e9a8e5.js"><link rel="prefetch" href="/assets/js/133.65b7f714.js"><link rel="prefetch" href="/assets/js/134.2f0de0be.js"><link rel="prefetch" href="/assets/js/135.cb3bfd28.js"><link rel="prefetch" href="/assets/js/137.3becf6c6.js"><link rel="prefetch" href="/assets/js/138.d8fcc8fe.js"><link rel="prefetch" href="/assets/js/14.aee2ba7b.js"><link rel="prefetch" href="/assets/js/15.5d899dd9.js"><link rel="prefetch" href="/assets/js/16.0f1c1851.js"><link rel="prefetch" href="/assets/js/17.a673a300.js"><link rel="prefetch" href="/assets/js/18.1f5949af.js"><link rel="prefetch" href="/assets/js/19.1216bbbd.js"><link rel="prefetch" href="/assets/js/20.3fc002f0.js"><link rel="prefetch" href="/assets/js/21.65c965a2.js"><link rel="prefetch" href="/assets/js/22.137ca28e.js"><link rel="prefetch" href="/assets/js/23.c459748a.js"><link rel="prefetch" href="/assets/js/24.364abb0a.js"><link rel="prefetch" href="/assets/js/25.25effd1b.js"><link rel="prefetch" href="/assets/js/26.a1d2675a.js"><link rel="prefetch" href="/assets/js/27.0be08613.js"><link rel="prefetch" href="/assets/js/28.70b8c17a.js"><link rel="prefetch" href="/assets/js/29.5adbd5e0.js"><link rel="prefetch" href="/assets/js/30.3843d933.js"><link rel="prefetch" href="/assets/js/31.b27ef3b1.js"><link rel="prefetch" href="/assets/js/32.fdbfc04d.js"><link rel="prefetch" href="/assets/js/33.7760da0f.js"><link rel="prefetch" href="/assets/js/34.437c690e.js"><link rel="prefetch" href="/assets/js/35.796574c9.js"><link rel="prefetch" href="/assets/js/36.0143110b.js"><link rel="prefetch" href="/assets/js/37.c0f92ebc.js"><link rel="prefetch" href="/assets/js/38.440d779f.js"><link rel="prefetch" href="/assets/js/39.969331f9.js"><link rel="prefetch" href="/assets/js/4.a318d046.js"><link rel="prefetch" href="/assets/js/40.194e12d5.js"><link rel="prefetch" href="/assets/js/41.3aac45e7.js"><link rel="prefetch" href="/assets/js/42.713db659.js"><link rel="prefetch" href="/assets/js/43.661ebb12.js"><link rel="prefetch" href="/assets/js/44.ec30c897.js"><link rel="prefetch" href="/assets/js/45.4eb712a2.js"><link rel="prefetch" href="/assets/js/46.b6a1b6c9.js"><link rel="prefetch" href="/assets/js/47.c1446395.js"><link rel="prefetch" href="/assets/js/48.c3cc0d04.js"><link rel="prefetch" href="/assets/js/49.58315dcf.js"><link rel="prefetch" href="/assets/js/5.c09621b5.js"><link rel="prefetch" href="/assets/js/50.9e53e77d.js"><link rel="prefetch" href="/assets/js/51.ec3fb7fc.js"><link rel="prefetch" href="/assets/js/52.f7798353.js"><link rel="prefetch" href="/assets/js/53.0e122f54.js"><link rel="prefetch" href="/assets/js/54.bf2cee05.js"><link rel="prefetch" href="/assets/js/55.c3e2dfb7.js"><link rel="prefetch" href="/assets/js/56.6c5ef542.js"><link rel="prefetch" href="/assets/js/57.97c73bf7.js"><link rel="prefetch" href="/assets/js/58.60793109.js"><link rel="prefetch" href="/assets/js/59.6d8d7ad9.js"><link rel="prefetch" href="/assets/js/6.816c4684.js"><link rel="prefetch" href="/assets/js/60.f30a98a7.js"><link rel="prefetch" href="/assets/js/61.16448d3e.js"><link rel="prefetch" href="/assets/js/62.1bfa5629.js"><link rel="prefetch" href="/assets/js/63.4097bfd8.js"><link rel="prefetch" href="/assets/js/64.e1c5e297.js"><link rel="prefetch" href="/assets/js/65.0712ea96.js"><link rel="prefetch" href="/assets/js/66.f2890611.js"><link rel="prefetch" href="/assets/js/67.8a17f3d4.js"><link rel="prefetch" href="/assets/js/68.985efa4e.js"><link rel="prefetch" href="/assets/js/69.752baca0.js"><link rel="prefetch" href="/assets/js/7.9d533feb.js"><link rel="prefetch" href="/assets/js/70.38be5e94.js"><link rel="prefetch" href="/assets/js/71.b1f8bb9d.js"><link rel="prefetch" href="/assets/js/72.48c072b5.js"><link rel="prefetch" href="/assets/js/73.23b44a71.js"><link rel="prefetch" href="/assets/js/74.0eee8813.js"><link rel="prefetch" href="/assets/js/75.d38a3d70.js"><link rel="prefetch" href="/assets/js/76.0c2c5d89.js"><link rel="prefetch" href="/assets/js/77.8cefe9be.js"><link rel="prefetch" href="/assets/js/78.070d2300.js"><link rel="prefetch" href="/assets/js/79.dfb36280.js"><link rel="prefetch" href="/assets/js/8.4433540c.js"><link rel="prefetch" href="/assets/js/80.e0e91da2.js"><link rel="prefetch" href="/assets/js/81.3494411f.js"><link rel="prefetch" href="/assets/js/82.3ece83c0.js"><link rel="prefetch" href="/assets/js/83.570c41b1.js"><link rel="prefetch" href="/assets/js/84.050c5052.js"><link rel="prefetch" href="/assets/js/85.0c6b55a8.js"><link rel="prefetch" href="/assets/js/86.6d7ee4ed.js"><link rel="prefetch" href="/assets/js/87.b051a4a6.js"><link rel="prefetch" href="/assets/js/88.5dbe0bf0.js"><link rel="prefetch" href="/assets/js/89.f33d7730.js"><link rel="prefetch" href="/assets/js/9.9a910bbd.js"><link rel="prefetch" href="/assets/js/90.08da77aa.js"><link rel="prefetch" href="/assets/js/91.35c67dac.js"><link rel="prefetch" href="/assets/js/92.bf002ee6.js"><link rel="prefetch" href="/assets/js/93.b1f55944.js"><link rel="prefetch" href="/assets/js/94.a6109a30.js"><link rel="prefetch" href="/assets/js/95.ae932d48.js"><link rel="prefetch" href="/assets/js/96.210d3793.js"><link rel="prefetch" href="/assets/js/97.ae6e9e5a.js"><link rel="prefetch" href="/assets/js/98.d7a25915.js"><link rel="prefetch" href="/assets/js/99.26da5087.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.54626788.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">静水流深</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/readBook/" class="nav-link">
+  读书笔记
+</a></div><div class="nav-item"><a href="/leetcode/" class="nav-link">
+  leetcode记录
+</a></div><div class="nav-item"><a href="/project/" class="nav-link">
+  项目
+</a></div><div class="nav-item"><a href="/repository/" class="nav-link">
+  知识库
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><p>title: 'javascript再出发: 模拟promise的实现'
+author: jsliushen
+tags:</p> <ul><li>javascript
+categories:</li> <li>技术</li> <li>''
+date: 2018-08-27 22:22:00</li></ul> <hr> <p>根据阮一峰的《ECMAScript6入门》中的介绍</p> <div class="language- extra-class"><pre><code>Promise 是异步编程的一种解决方案，比传统的解决方案——回调函数和事件——更合理和更强大。它由社区最早提出和实现，ES6 将其写进了语言标准，统一了用法，原生提供了Promise对象。
+</code></pre></div><p>现在我们来模拟实现一个Promise类，完成基本的功能和部分API。</p> <h2 id="基本功能"><a href="#基本功能" class="header-anchor">#</a> 基本功能</h2> <p>首先看一下promise的基本用法</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  <span class="hljs-comment">// ... some code</span>
+
+  <span class="hljs-keyword">if</span> (<span class="hljs-comment">/* 异步操作成功 */</span>){
+    resolve(value);
+  } <span class="hljs-keyword">else</span> {
+    reject(error);
+  }
+}).then(<span class="hljs-function">(<span class="hljs-params">value</span>)=&gt;</span>{
+	
+},(error)=&gt;{
+	
+})
+</code></pre></div><p>通过上述代码，我们来简单的整理一下我们的基础版本需要实现的功能。</p> <ol><li>创造一个构造函数或者类，名Promise</li> <li>实例化Promise对象时要传入一个函数参数fn，fn有两个参数，resolve和reject</li> <li>实例化时会执行fn，在fn中可以调用resolve和reject并传入参数</li> <li>这个实例化对象可以调用then方法，then方法中可以传入两个回调函数，分别对应reolve和reject。当fn中调用的是resolve时，会触发then中的第一个回调函数，当fn中调用的是reject时，会调用then中的第二个回调函数。</li></ol> <p>下面上代码</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-comment">//创建一个myPromise类</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPromsie</span></span>{
+	<span class="hljs-comment">//传入参数fn</span>
+    <span class="hljs-keyword">constructor</span>(fn){
+    	<span class="hljs-comment">//保存promise中的关键数据，resolve和reject的回调函数及它们的参数</span>
+        <span class="hljs-keyword">this</span>.value = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.error = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.onFulfilled = <span class="hljs-literal">null</span>
+        <span class="hljs-keyword">this</span>.onRejected = <span class="hljs-literal">null</span>;
+        
+        <span class="hljs-comment">//调用resolve时，保存参数，调用对应的回调函数</span>
+        <span class="hljs-keyword">const</span> resolve = <span class="hljs-function">(<span class="hljs-params">value</span>)=&gt;</span>{
+            <span class="hljs-keyword">this</span>.value = value
+            <span class="hljs-keyword">this</span>.onFulfilled(<span class="hljs-keyword">this</span>.value)
+        }
+
+		<span class="hljs-comment">//调用reject时，保存参数，调用对应的回调函数</span>
+        <span class="hljs-keyword">const</span> reject = <span class="hljs-function">(<span class="hljs-params">error</span>)=&gt;</span>{
+            <span class="hljs-keyword">this</span>.error = error
+            <span class="hljs-keyword">this</span>.onRejected(<span class="hljs-keyword">this</span>.error)
+        }
+
+		<span class="hljs-comment">//实例化Promise对象时，执行fn</span>
+        fn(resolve, reject)
+    }
+    
+    <span class="hljs-comment">//在原型上定义then方法，接收两个回调函数</span>
+    then(onFulfilled,onRejected){
+        <span class="hljs-keyword">this</span>.onFulfilled = onFulfilled;
+        <span class="hljs-keyword">this</span>.onRejected = onRejected
+    }
+}
+</code></pre></div><p>测试一下</p> <div class="language- extra-class"><pre><code>new MyPromsie((resolve,reject)=&gt;{
+    setTimeout(()=&gt;{
+        resolve(1)
+        reject(2)
+    },2000)
+}).then((res)=&gt;{
+    console.log(res)
+},(err)=&gt;{
+	console.log(err)
+})
+</code></pre></div><p>以上代码会在2秒后打印出1，2
+不考虑其他功能，我们算是实现了上面的4个需求，基础版本完成！<br>
+有不懂的同学欢迎留言讨论。</p> <h2 id="同步问题"><a href="#同步问题" class="header-anchor">#</a> 同步问题</h2> <p>上面的代码实在是太过于基础了，有很多的不足之处。比如，在ES6的promise中，除了使用异步的方式调用resolve和reject，还支持同步的方式。</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">resolve, reject</span>) </span>{
+  resolve(<span class="hljs-number">1</span>)
+}).then(<span class="hljs-function">(<span class="hljs-params">value</span>)=&gt;</span>{
+  <span class="hljs-built_in">console</span>.log(value)
+},(error)=&gt;{
+	
+})
+</code></pre></div><p>以上代码会立即打印出1，promise在实例化时立即执行resolve，触发对应的回调函数。但如果是我们模拟的myPromise呢？</p> <div class="language- extra-class"><pre><code>new MyPromise(function(resolve, reject) {
+  resolve(1)
+}).then((value)=&gt;{
+  console.log(value)
+},(error)=&gt;{
+	
+})
+</code></pre></div><p>以上代码会报错： <code>TypeError: this.onFulfilled is not a function</code><br>
+应该很容易理解，我们在触发resolve时，then方法还没有执行，也就是<code>this.onFulfilled</code> 和<code>this.onRejected</code> 还没有被赋值。此时执行resolve，调用 <code>this.onFulfilled</code> ，当然会报错啦。</p> <p>知道了问题，解决方案就简单了。只需要让then先执行，resolve或者reject后执行就可以了。我们可以利用时间循环机制，在resolve里加上setTimeout，让它在下一轮循环的时候才调用。</p> <p>代码如下：</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPromsie</span> </span>{
+    <span class="hljs-keyword">constructor</span>(fn) {
+        <span class="hljs-keyword">this</span>.value = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.error = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.onFulfilled = <span class="hljs-literal">null</span>
+        <span class="hljs-keyword">this</span>.onRejected = <span class="hljs-literal">null</span>;
+
+        <span class="hljs-keyword">const</span> resolve = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+        	<span class="hljs-comment">//加上setTimeout，下轮循环的时候才调用onFulfilled</span>
+            setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+                <span class="hljs-keyword">this</span>.value = value
+                <span class="hljs-keyword">this</span>.onFulfilled(<span class="hljs-keyword">this</span>.value)
+            }, <span class="hljs-number">0</span>)
+
+        }
+
+        <span class="hljs-keyword">const</span> reject = <span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> {
+        	<span class="hljs-comment">//加上setTimeout，下轮循环的时候才调用onRejected</span>
+            setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+                <span class="hljs-keyword">this</span>.error = error
+                <span class="hljs-keyword">this</span>.onRejected(<span class="hljs-keyword">this</span>.error)
+            }, <span class="hljs-number">0</span>)
+        }
+
+        fn(resolve, reject)
+    }
+    then(onFulfilled, onRejected) {
+        <span class="hljs-keyword">this</span>.onFulfilled = onFulfilled;
+        <span class="hljs-keyword">this</span>.onRejected = onRejected
+    }
+}
+
+</code></pre></div><p>测试一下</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> MyPromsie(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    resolve(<span class="hljs-number">1</span>)
+    reject(<span class="hljs-number">2</span>)
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(res)
+},(err)=&gt;{
+    <span class="hljs-built_in">console</span>.log(err)
+})
+</code></pre></div><p>以上代码会立即执行打印1，2。 这样我们就解决promise实例对象里同步调用resolve和reject的情况了。</p> <h2 id="三种状态"><a href="#三种状态" class="header-anchor">#</a> 三种状态</h2> <p>上面的测试代码中，我们同时触发了resolve和reject，then中的两个回调函数都被调用了，同时打印出了1，2.<br>
+熟悉promise的同学都知道，Promise对象有以下两个特点。</p> <div class="language- extra-class"><pre><code>
+（1）对象的状态不受外界影响。Promise对象代表一个异步操作，有三种状态：pending（进行中）、fulfilled（已成功）和rejected（已失败）。只有异步操作的结果，可以决定当前是哪一种状态，任何其他操作都无法改变这个状态。这也是Promise这个名字的由来，它的英语意思就是“承诺”，表示其他手段无法改变。
+
+（2）一旦状态改变，就不会再变，任何时候都可以得到这个结果。Promise对象的状态改变，只有两种可能：从pending变为fulfilled和从pending变为rejected。只要这两种情况发生，状态就凝固了，不会再变了，会一直保持这个结果，这时就称为 resolved（已定型）。如果改变已经发生了，你再对Promise对象添加回调函数，也会立即得到这个结果。这与事件（Event）完全不同，事件的特点是，如果你错过了它，再去监听，是得不到结果的。
+
+</code></pre></div><p>上面的话应该不难理解，下面我们来改造我们的代码，给promise添加三个状态，并满足以下需求：</p> <ol><li>只有异步操作的结果才能改变状态</li> <li>状态只能从pending变为fulfilled和从pending变为rejected</li> <li>一旦状态改变了，就不会再变了。再操作状态，也会立即得到这个结果</li></ol> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPromsie</span> </span>{
+
+    <span class="hljs-keyword">constructor</span>(fn) {
+        <span class="hljs-keyword">this</span>.value = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.error = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.onFulfilled = <span class="hljs-literal">null</span>
+        <span class="hljs-keyword">this</span>.onRejected = <span class="hljs-literal">null</span>;
+        <span class="hljs-comment">//初始状态pending</span>
+        <span class="hljs-keyword">this</span>.status = <span class="hljs-string">'pending'</span>
+
+        <span class="hljs-keyword">const</span> resolve = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+            setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            	<span class="hljs-comment">//只有状态是pending时才进行操作，改变为fulfilled状态</span>
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'pending'</span>) {
+                    <span class="hljs-keyword">this</span>.status = <span class="hljs-string">'fulfilled'</span>
+                    <span class="hljs-keyword">this</span>.value = value
+                    <span class="hljs-keyword">this</span>.onFulfilled(<span class="hljs-keyword">this</span>.value)
+                }
+            }, <span class="hljs-number">0</span>)
+
+        }
+
+        <span class="hljs-keyword">const</span> reject = <span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> {
+            setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+            	<span class="hljs-comment">//只有状态是pending时才进行操作，改变为rejected状态</span>
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'pending'</span>) {
+                    <span class="hljs-keyword">this</span>.status = <span class="hljs-string">'rejected'</span>
+                    <span class="hljs-keyword">this</span>.error = error
+                    <span class="hljs-keyword">this</span>.onRejected(<span class="hljs-keyword">this</span>.error)
+                }
+
+            }, <span class="hljs-number">0</span>)
+        }
+
+        fn(resolve, reject)
+    }
+
+    then(onFulfilled, onRejected) {
+    	<span class="hljs-comment">//只有状态是pending时才进行操作，才给回调函数赋值</span>
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'pending'</span>) {
+            <span class="hljs-keyword">this</span>.onFulfilled = onFulfilled;
+            <span class="hljs-keyword">this</span>.onRejected = onRejected
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'fulfilled'</span>) {
+        	<span class="hljs-comment">//如果状态已经变成fulfilled了，立即返回结果onFulfilled的执行结果</span>
+            <span class="hljs-keyword">this</span>.onFulfilled(<span class="hljs-keyword">this</span>.value)
+        } <span class="hljs-keyword">else</span> {
+        	<span class="hljs-comment">//如果状态已经变成rejected了，立即返回结果onRejected的执行结果</span>
+            <span class="hljs-keyword">this</span>.onRejected(<span class="hljs-keyword">this</span>.error)
+        }
+    }
+}
+</code></pre></div><p>测试一下：</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> MyPromsie(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+        resolve(<span class="hljs-number">1</span>)
+    }, <span class="hljs-number">2000</span>)
+    reject(<span class="hljs-number">2</span>)
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(res)
+}, (err) =&gt; {
+    <span class="hljs-built_in">console</span>.log(err)
+})
+</code></pre></div><p>以上代码会立即打印2，两秒之后不会打印1.测试通过。这样我们就实现了给promise添加三种状态并让他们满足特定的需求。</p> <h2 id="链式调用"><a href="#链式调用" class="header-anchor">#</a> 链式调用</h2> <p>promise的诞生是为了解决回调地狱，可以说链式调用是它最强大的地方。想实现链式调用，我们可以参考jquery的实现，在方法的最后返回this。在现在的模拟实现版本中，回调函数的引用是onFullfilled和onRejected，每次调用then方法时会对onFullFilled和onRejected重新赋值，无法存储链式中所有的then中的回调函数。为了方便存储，支持链式调用，我们需要把onFullfilled和onRejected变成数组的形式。<br>
+下面看代码:</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyPromsie</span> </span>{
+
+    <span class="hljs-keyword">constructor</span>(fn) {
+        <span class="hljs-keyword">this</span>.value = <span class="hljs-string">''</span>;
+        <span class="hljs-keyword">this</span>.error = <span class="hljs-string">''</span>;
+        <span class="hljs-comment">//使用数组存储所有的回调函数，方便链式调用</span>
+        <span class="hljs-keyword">this</span>.onFulfilled = []
+        <span class="hljs-keyword">this</span>.onRejected = []
+        <span class="hljs-keyword">this</span>.status = <span class="hljs-string">'pending'</span>
+
+        <span class="hljs-keyword">const</span> resolve = <span class="hljs-function">(<span class="hljs-params">value</span>) =&gt;</span> {
+            setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'pending'</span>) {
+                    <span class="hljs-keyword">this</span>.status = <span class="hljs-string">'fulfilled'</span>
+                    <span class="hljs-keyword">this</span>.value = value
+                    <span class="hljs-comment">//循环调用所有的onFullfilled回调函数</span>
+                    <span class="hljs-keyword">this</span>.onFulfilled.forEach(<span class="hljs-function">(<span class="hljs-params">callback</span>)=&gt;</span>{
+                        callback(<span class="hljs-keyword">this</span>.value)
+                    })
+                }
+            }, <span class="hljs-number">0</span>)
+        }
+
+        <span class="hljs-keyword">const</span> reject = <span class="hljs-function">(<span class="hljs-params">error</span>) =&gt;</span> {
+            setTimeout(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'pending'</span>) {
+                    <span class="hljs-keyword">this</span>.status = <span class="hljs-string">'rejected'</span>
+                    <span class="hljs-keyword">this</span>.error = error
+                    <span class="hljs-comment">//循环调用所有的onRejected回调函数</span>
+                    <span class="hljs-keyword">this</span>.onRejected.forEach(<span class="hljs-function">(<span class="hljs-params">callback</span>)=&gt;</span>{
+                        callback(<span class="hljs-keyword">this</span>.error)
+                    })
+                }
+            }, <span class="hljs-number">0</span>)
+        }
+
+        fn(resolve, reject)
+    }
+
+    then(onFulfilled, onRejected) {
+        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'pending'</span>) {
+        	<span class="hljs-comment">//then方法存储所有的回调函数</span>
+            <span class="hljs-keyword">this</span>.onFulfilled.push(onFulfilled);
+            <span class="hljs-keyword">this</span>.onRejected.push(onRejected);
+        } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.status === <span class="hljs-string">'fulfilled'</span>) {
+            onFulfilled(<span class="hljs-keyword">this</span>.value)
+        } <span class="hljs-keyword">else</span> {
+            onRejected(<span class="hljs-keyword">this</span>.error)
+        }
+        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>;
+    }
+}
+</code></pre></div><p>测试一下</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> MyPromsie(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>)=&gt;</span>{
+    setTimeout(<span class="hljs-function"><span class="hljs-params">()</span>=&gt;</span>{
+        <span class="hljs-built_in">console</span>.log(<span class="hljs-number">1</span>)
+        resolve(<span class="hljs-number">1</span>)
+    },<span class="hljs-number">2000</span>)
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>)=&gt;</span>{
+    <span class="hljs-built_in">console</span>.log(res)
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>)=&gt;</span>{
+    <span class="hljs-built_in">console</span>.log(res)
+})
+</code></pre></div><p>上面的代码回在两秒后打印3个1。这样我们就有了链式调用的一个基本雏形。之所以说是雏形，是因为这种写法有两大致命的问题。还是用上面最新的版本，我们来看一个栗子:</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> MyPromsie(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    resolve(<span class="hljs-number">1</span>)
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(res)
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+        resolve(<span class="hljs-number">2</span>)
+    })
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(res)
+})
+</code></pre></div><p>根据我们对promise的使用印象，上面的栗子应该会打印出1和2。但是使用我们的模拟版本运行之后，打印出的是两个1。仔细分析我们不难找出问题所在：在模拟实现的代码中，每次调用then之后返回的都是this，也就是同一个promise对象，我们记为promiseA。在promiseA变为resolve状态时，它会循环调用onFullfilled中的回调函数，循环中传入的参数是this.value，所以不管链式调用多少次, this.value永远都是promiseA的value。</p> <p>上面是我们的链式调用的第一个问题，第二个问题就是串行异步的问题。链式调用时，得等到前一个then中的回调函数执行完毕之后才会执行下一个回调函数，即使是异步的。  
+为了解决上面的问题，我们一步一步来改进我们的代码。</p><p></p><p>首先在then中，为了记录回调函数中的promise的resolve值，我们不能再返回this。但是为了达到链式调用的目的，我们必须返回一个promise对象，所以现在的then方法变成了这样</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	then(onFulfilled, onRejected) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>)=&gt;</span>{
+        	
+      })
+   }
+</code></pre></div><p>还是上面那个栗子，</p> <div class="language-javascript extra-class"><pre><code class="language-javascript"><span class="hljs-keyword">new</span> MyPromsie(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+    resolve(<span class="hljs-number">1</span>)
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(res)
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>) =&gt;</span> {
+        resolve(<span class="hljs-number">2</span>)
+    })
+}).then(<span class="hljs-function">(<span class="hljs-params">res</span>) =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(res)
+})
+</code></pre></div><p>我们对照分析一下。假设栗子最开始创建的一个myPromise对象是promiseA，promiseA调用第一个then方法，then方法中回返回一个新的promise对象，我们称之为promiseB。那么很明显，第二个then方法对应的promise对象是promiseB，它的回调函数中的参数res是promiseB的value。</p> <p>在第一个then方法中，有一个回调函数需要执行</p> <div class="language- extra-class"><pre><code>	（res）=&gt;{
+    	console.log(res)
+        return new Promise((resolve, reject) =&gt; {
+            resolve(2)
+        })	
+    }
+	
+</code></pre></div><p>这个回调函数对应的是then方法中的onFullfilled，这个回调函数需要执行，所以我们的then方法里面需要加上执行的代码</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	then(onFulfilled, onRejected) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>)=&gt;</span>{
+        <span class="hljs-keyword">let</span> x = onFullfilled(<span class="hljs-keyword">this</span>.value)
+      })
+   }
+</code></pre></div><p>这样回调函数就执行了，上面的回调执行之后，会返回一个新的promise，</p> <div class="language- extra-class"><pre><code>		return new Promise((resolve, reject) =&gt; {
+            resolve(2)
+        })	
+</code></pre></div><p>我们称之为promiseC，很明显，这里的x就是promiseC的引用。第二个then执行时，我们希望打印出的结果是2，那么问题来了，在promiseC中，resolve(2)执行后，promiseC的value变成了2。但是第二个then执行时，回调函数的参数是promiseB的value。所以我们得想办法把promiseC的value给到promiseB的value。promiseC的value获取方式很简单，在promiseC的then方法中，我们可以通过回调函数的参数获取value，将它赋值给promiseB的resolve。这时的then方法变成了这样</p> <div class="language-javascript extra-class"><pre><code class="language-javascript">	then(onFulfilled, onRejected) {
+      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-built_in">Promise</span>(<span class="hljs-function">(<span class="hljs-params">resolve, reject</span>)=&gt;</span>{
+        <span class="hljs-keyword">let</span> x = onFullfilled(<span class="hljs-keyword">this</span>.value)
+        x.then(<span class="hljs-function">(<span class="hljs-params">res</span>)=&gt;</span>{
+        	resolve(res)
+        })
+      })
+   }
+</code></pre></div><p>此时我们就很巧妙的把promiseC的value传递给了promiseB。上面的过程有点难懂，大家可以多看几遍，还有不懂的欢迎留言讨论。<br>
+then方法中还有返回非promise对象的情况，所以我们得做一些兼容处理，再加上一些优化的代码，最终我们的then方法变成了这样。</p> <div class="language- extra-class"><pre><code>then(onFulfilled, onRejected) {
+	onFulfilled = typeof onFulfilled === &quot;function&quot; ? onFulfilled : value =&gt; value
+    onRejected = typeof onRejected === &quot;function&quot; ? onRejected : error =&gt; error
+    
+    if (self.status === FULFILLED) {
+        return new MyPromise((resolve, reject) =&gt; {
+             try {
+                let x = onFulfilled(self.value);
+                resolvePromise(x, resolve, reject);
+             } catch (e) {
+                reject(e);
+             }
+        })
+    }
+    
+    if (self.status === REJECTED) {
+        return new MyPromise((resolve, reject) =&gt; {
+            try {
+                  let x = onRejected(self.error);
+                  resolvePromise(x, resolve, reject);
+            } catch (e) {
+                  reject(e);
+            }
+        })
+    }
+    
+    if (self.status === PENDING) {
+        return new MyPromise((resolve, reject) =&gt; {
+            self.onFulfilledCallbacks.push((value) =&gt; {
+                try {
+                    let x = onFulfilled(value);
+                    resolvePromise(bridgePromise, x, resolve, reject);
+                } catch (e) {
+                    reject(e);
+                }
+            });
+            self.onRejectedCallbacks.push((error) =&gt; {
+                try {
+                    let x = onRejected(error);
+                    resolvePromise(bridgePromise, x, resolve, reject);
+                } catch (e) {
+                    reject(e);
+                }
+            });
+        });
+    }
+    
+}
+    
+}
+
+//用来解析回调函数的返回值x，x可能是普通值也可能是个promise对象
+function resolvePromise(x, resolve, reject) {
+   //如果x是一个promise
+    if (x instanceof MyPromise) {
+        //如果这个promise是pending状态，就在它的then方法里继续执行resolvePromise解析它的结果，直到返回值不是一个pending状态的promise为止
+        if (x.status === PENDING) {
+            x.then(y =&gt; {
+                resolvePromise(y, resolve, reject);
+            }, error =&gt; {
+                reject(error);
+            });
+        } else {
+            x.then(resolve, reject);
+        }
+    } else {
+        resolve(x);
+    }
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.94455cae.js" defer></script><script src="/assets/js/3.46e2d97a.js" defer></script><script src="/assets/js/136.54e69925.js" defer></script>
+  </body>
+</html>
